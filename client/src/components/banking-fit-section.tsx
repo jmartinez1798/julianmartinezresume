@@ -48,10 +48,34 @@ export function BankingFitSection() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
             ¿Por qué Oriental Bank?
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto animate-fadeInUp">
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto animate-fadeInUp mb-8">
             Mi combinación única de formación técnica, experiencia práctica y pasión por la innovación 
             me posiciona como el candidato ideal para contribuir al éxito y crecimiento de Oriental Bank.
           </p>
+          
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 max-w-4xl mx-auto">
+            <h3 className="text-lg font-bold mb-4 text-primary">👨‍💼 Posiciones de Interés en Oriental Bank</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                <div className="font-semibold text-sm">Digital Transformation Intern</div>
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                <div className="font-semibold text-sm">IT Support Hybrid</div>
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                <div className="font-semibold text-sm">Innovation Projects Assistant</div>
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                <div className="font-semibold text-sm">Data Automation Analyst</div>
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                <div className="font-semibold text-sm">Business Process Improvement</div>
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                <div className="font-semibold text-sm">Tech-Focused Roles</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

@@ -1,16 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { Download, ArrowDown } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 import { QRCodeGenerator } from "./qr-code-generator";
 
 export function HeroSection() {
   const handleDownloadResume = () => {
-    // In a real implementation, this would download an actual PDF file
+    // Create a link to download the resume PDF
     const link = document.createElement('a');
-    link.href = 'data:application/pdf;base64,'; // This would be the actual PDF data
-    link.download = 'Julian_Martinez_Resume.pdf';
+    link.href = '/JulianMartinez_Resume2025.pdf'; // This should be placed in the public folder
+    link.download = 'JulianMartinez_Resume2025.pdf';
+    link.target = '_blank';
     
-    // For demo purposes, show an alert
-    alert('Resume download would start here. In a real implementation, this would download the actual PDF file.');
+    // Attempt to download, fallback to alert if file not found
+    try {
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      alert('El archivo PDF del currículum estará disponible próximamente. Por favor contacta directamente para solicitar una copia.');
+    }
   };
 
   const scrollToProjects = () => {
@@ -48,7 +55,7 @@ export function HeroSection() {
             onClick={handleDownloadResume}
             className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <Download className="mr-2 h-5 w-5" />
+            <FileText className="mr-2 h-5 w-5" />
             Descargar CV
           </Button>
           

@@ -42,11 +42,10 @@ Oriental Bank hiring managers and HR team looking for candidates with:
 - Focus on real-world applicable projects
 
 ## Recent Changes
-- Updated portfolio with real projects and specific technical skills (2025-01-24)
-- Added authentic project cards: Spots App (React Native/Firebase), Oil-Water Separator (SolidWorks/3D printing), Automated Assembly Line (Arduino/PLC), Heat Exchanger (ANSYS Fluent)
-- Enhanced skills section with actual tools: Arduino, PLC Logic, Firebase, React Native
-- Added dedicated automation tools section showcasing Zapier, Google Apps Script, GitHub
-- Updated banking fit section with 5-point value proposition grid
-- Emphasized bilingual communication and bridge between engineering/technology
-- All projects now include specific technologies with visual badges
-- Enhanced Oriental Bank section with concrete examples of candidate value
+- Updated contact information with real details: julian1798@yahoo.com, 787-397-4295, Toa Alta PR (2025-01-24)
+- Enhanced resume download functionality with proper PDF link (JulianMartinez_Resume2025.pdf)
+- Added specific Oriental Bank position targets: Digital Transformation Intern, IT Support Hybrid, Innovation Projects Assistant, Data Automation Analyst, Business Process Improvement
+- Created loading spinner component for professional initial experience
+- Updated all email links throughout the site to use real contact information
+- Enhanced Banking Fit section with dedicated positions grid showing target roles
+- Improved resume download with proper error handling and file management

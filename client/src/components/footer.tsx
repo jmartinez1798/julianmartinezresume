@@ -23,7 +23,7 @@ export function Footer() {
               <Linkedin className="text-xl" />
             </a>
             <a 
-              href="mailto:julian.martinez@email.com"
+              href="mailto:julian1798@yahoo.com"
               className="w-12 h-12 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
             >
               <Mail className="text-xl" />

@@ -6,18 +6,22 @@ import { ProjectsSection } from "@/components/projects-section";
 import { BankingFitSection } from "@/components/banking-fit-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { LoadingSpinner } from "@/components/loading-spinner";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <BankingFitSection />
-      <ContactSection />
-      <Footer />
-    </div>
+    <>
+      <LoadingSpinner />
+      <div className="min-h-screen">
+        <Navigation />
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <BankingFitSection />
+        <ContactSection />
+        <Footer />
+      </div>
+    </>
   );
 }
