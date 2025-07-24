@@ -13,7 +13,7 @@ export function Navigation() {
     { id: "about", label: "Sobre Mí" },
     { id: "skills", label: "Habilidades" },
     { id: "projects", label: "Proyectos" },
-    { id: "banking-fit", label: "Oriental Bank" },
+    { id: "professional-areas", label: "Áreas de Interés" },
     { id: "contact", label: "Contacto" },
   ];
 

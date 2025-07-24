@@ -1,15 +1,15 @@
-# Julián Martínez Portfolio - Oriental Bank Application
+# Julián Martínez Portfolio - Professional Engineering Portfolio
 
 ## Project Overview
-A professional portfolio website specifically designed for Julián Martínez, a Mechanical Engineering student from Puerto Rico, applying for hybrid positions at Oriental Bank in innovation, digital transformation, automation, technology, or technical support.
+A professional portfolio website for Julián Martínez, a Mechanical Engineering student from Puerto Rico, serving as an interactive resume for applications to both banking sector (Oriental Bank) and engineering/technology companies (Raytheon, Honeywell, Lockheed Martin). The site emphasizes authenticity, willingness to learn, and showcases real developing technical skills without corporate exaggeration.
 
 ## Target Audience
-Oriental Bank hiring managers and HR team looking for candidates with:
-- Technical innovation skills
-- Process automation experience
-- Problem-solving capabilities
-- Digital transformation knowledge
-- Banking/financial sector adaptability
+Hiring managers from diverse industries looking for candidates with:
+- Technical innovation skills and real project experience
+- Process automation and engineering knowledge
+- Problem-solving capabilities and learning mindset
+- Bilingual communication skills (English/Spanish)
+- Versatility across banking, engineering, and technology sectors
 
 ## Design Requirements
 - Professional, modern, minimalist design
@@ -37,15 +37,16 @@ Oriental Bank hiring managers and HR team looking for candidates with:
 
 ## User Preferences
 - Spanish content preferred for Puerto Rican context
-- Professional tone suitable for banking industry
-- Emphasis on innovation and technical problem-solving
-- Focus on real-world applicable projects
+- Authentic and realistic profile showing willingness to learn vs corporate language
+- Professional tone suitable for both banking and engineering industries
+- Emphasis on real developing technical skills and practical projects
+- Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Updated contact information with real details: julian1798@yahoo.com, 787-397-4295, Toa Alta PR (2025-01-24)
-- Enhanced resume download functionality with proper PDF link (JulianMartinez_Resume2025.pdf)
-- Added specific Oriental Bank position targets: Digital Transformation Intern, IT Support Hybrid, Innovation Projects Assistant, Data Automation Analyst, Business Process Improvement
-- Created loading spinner component for professional initial experience
-- Updated all email links throughout the site to use real contact information
-- Enhanced Banking Fit section with dedicated positions grid showing target roles
-- Improved resume download with proper error handling and file management
+- Expanded target audience beyond Oriental Bank to include engineering/tech companies (Raytheon, Honeywell, Lockheed Martin) (2025-01-24)
+- Updated hero section messaging to emphasize authentic learning mindset and versatility
+- Renamed "Oriental Bank section" to "Professional Interest Areas" with dual industry focus
+- Restructured professional areas into Banking/Finance and Engineering/Technology sectors
+- Updated value proposition to emphasize authenticity, learning disposition, and real problem-solving
+- Maintained real contact information (julian1798@yahoo.com, 787-397-4295, Toa Alta PR)
+- Enhanced messaging to avoid corporate exaggeration while showcasing genuine developing skills

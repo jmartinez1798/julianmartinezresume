@@ -43,11 +43,12 @@ export function HeroSection() {
         </h1>
         
         <div className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-2 font-semibold">
-          Estudiante de Ingeniería Mecánica · Innovador Tecnológico · Solucionador de Problemas
+          Estudiante de Ingeniería Mecánica con interés en automatización, tecnología e innovación aplicada
         </div>
         
         <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-          Especializado en automatización de procesos, transformación digital y desarrollo de soluciones tecnológicas para el sector bancario.
+          Actualmente desarrollando habilidades en diseño, software y resolución de problemas reales. 
+          Interesado en oportunidades que me permitan aprender, aportar valor y crecer profesionalmente.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

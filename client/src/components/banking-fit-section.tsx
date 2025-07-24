@@ -42,37 +42,45 @@ const bankingValues = [
 
 export function BankingFitSection() {
   return (
-    <section id="banking-fit" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+    <section id="professional-areas" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
-            ¿Por qué Oriental Bank?
+            Áreas de Interés Profesional
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto animate-fadeInUp mb-8">
-            Mi combinación única de formación técnica, experiencia práctica y pasión por la innovación 
-            me posiciona como el candidato ideal para contribuir al éxito y crecimiento de Oriental Bank.
+            Mi combinación de formación técnica, experiencia práctica y pasión por la innovación 
+            me permite contribuir en diferentes sectores industriales y tecnológicos.
           </p>
           
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 max-w-4xl mx-auto">
-            <h3 className="text-lg font-bold mb-4 text-primary">👨‍💼 Posiciones de Interés en Oriental Bank</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                <div className="font-semibold text-sm">Digital Transformation Intern</div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-6">
+              <h3 className="text-lg font-bold mb-4 text-primary">🏦 Sector Bancario y Finanzas</h3>
+              <div className="grid gap-2">
+                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                  <div className="font-semibold text-sm">Digital Transformation Intern</div>
+                </div>
+                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                  <div className="font-semibold text-sm">IT Support Hybrid</div>
+                </div>
+                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                  <div className="font-semibold text-sm">Data Automation Analyst</div>
+                </div>
               </div>
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                <div className="font-semibold text-sm">IT Support Hybrid</div>
-              </div>
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                <div className="font-semibold text-sm">Innovation Projects Assistant</div>
-              </div>
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                <div className="font-semibold text-sm">Data Automation Analyst</div>
-              </div>
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                <div className="font-semibold text-sm">Business Process Improvement</div>
-              </div>
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                <div className="font-semibold text-sm">Tech-Focused Roles</div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-2xl p-6">
+              <h3 className="text-lg font-bold mb-4 text-primary">🔧 Ingeniería y Tecnología</h3>
+              <div className="grid gap-2">
+                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                  <div className="font-semibold text-sm">Engineering Intern (Raytheon, Honeywell)</div>
+                </div>
+                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                  <div className="font-semibold text-sm">Automation Technician</div>
+                </div>
+                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
+                  <div className="font-semibold text-sm">Systems Design Assistant</div>
+                </div>
               </div>
             </div>
           </div>
@@ -102,11 +110,11 @@ export function BankingFitSection() {
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl animate-fadeInUp">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Mi Compromiso con Oriental Bank</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Mi Propuesta de Valor</h3>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl mx-auto mb-6">
-              Estoy preparado para aportar mi experiencia técnica, creatividad y dedicación para impulsar 
-              la transformación digital de Oriental Bank. Mi enfoque proactivo y mi pasión por la innovación 
-              me permitirán contribuir significativamente a los objetivos estratégicos de la institución.
+              Estoy preparado para aportar mi experiencia técnica, creatividad y dedicación en cualquier industria. 
+              Mi enfoque proactivo y mi pasión por la innovación me permitirán contribuir significativamente 
+              en proyectos de ingeniería, tecnología o transformación digital.
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
@@ -120,15 +128,15 @@ export function BankingFitSection() {
               </div>
               <div className="flex flex-col items-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Autodidacta en automatización y apps</div>
+                <div className="text-sm font-semibold text-center">Autodidacta con disposición a aprender</div>
               </div>
               <div className="flex flex-col items-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Innovación en sistemas obsoletos</div>
+                <div className="text-sm font-semibold text-center">Enfoque en resolver problemas reales</div>
               </div>
               <div className="flex flex-col items-center p-3 bg-teal-50 dark:bg-teal-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Listo para transformación digital</div>
+                <div className="text-sm font-semibold text-center">Experiencia práctica en proyectos</div>
               </div>
             </div>
           </div>
