@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Settings, Laptop, Users } from "lucide-react";
+import { AutomationToolsSection } from "./automation-tools-section";
 
 interface SkillItem {
   name: string;
@@ -21,8 +22,8 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Diseño Mecánico", percentage: 95 },
       { name: "Automatización", percentage: 90 },
-      { name: "Análisis de Sistemas", percentage: 88 },
-      { name: "Ingeniería de Procesos", percentage: 85 }
+      { name: "Arduino & PLC Logic", percentage: 85 },
+      { name: "Análisis ANSYS Fluent", percentage: 88 }
     ]
   },
   {
@@ -30,10 +31,10 @@ const skillCategories: SkillCategory[] = [
     icon: <Laptop className="text-white text-2xl" />,
     color: "bg-emerald-500",
     skills: [
+      { name: "React Native", percentage: 85 },
+      { name: "Firebase", percentage: 80 },
       { name: "Python", percentage: 85 },
-      { name: "SolidWorks", percentage: 95 },
-      { name: "MATLAB", percentage: 80 },
-      { name: "React Native", percentage: 70 }
+      { name: "SolidWorks", percentage: 95 }
     ]
   },
   {
@@ -42,9 +43,9 @@ const skillCategories: SkillCategory[] = [
     color: "bg-purple-500", 
     skills: [
       { name: "Resolución de Problemas", percentage: 98 },
-      { name: "Pensamiento Analítico", percentage: 92 },
-      { name: "Comunicación", percentage: 88 },
-      { name: "Adaptabilidad", percentage: 90 }
+      { name: "Comunicación Bilingüe", percentage: 88 },
+      { name: "Liderazgo en Equipo", percentage: 90 },
+      { name: "Innovación", percentage: 95 }
     ]
   }
 ];
@@ -122,6 +123,8 @@ export function SkillsSection() {
             </div>
           ))}
         </div>
+        
+        <AutomationToolsSection />
       </div>
     </section>
   );

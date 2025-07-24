@@ -5,39 +5,39 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Sistema de Automatización Bancaria",
-    description: "Diseñé un prototipo de sistema automatizado para procesos bancarios que aumentó la eficiencia operacional en 40%. Integré sensores, actuadores y sistemas de control para operación perfecta.",
-    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Sistema automatizado con brazos robóticos y cintas transportadoras",
-    technologies: ["Python", "Arduino", "Programación PLC"],
-    techColors: ["bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200", "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200"]
+    title: "Spots App – Social Photo App",
+    description: "Desarrollé una aplicación social de fotos usando Firebase y React Native. Integré memorias de mapas, flujos de usuario y sistemas de desafíos fotográficos que promueven el engagement y etiquetado de contenido digital.",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    alt: "Aplicación móvil con mapas y fotos sociales",
+    technologies: ["React Native", "Firebase", "Maps API"],
+    techColors: ["bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200"]
   },
   {
     id: 2,
-    title: "Plataforma de Análisis de Datos Financieros",
-    description: "Desarrollé una aplicación móvil para análisis de datos financieros usando React Native, con capacidades de visualización y reportes automatizados para instituciones bancarias.",
+    title: "Oil-Water Separator",
+    description: "Diseñé un separador de aceite-agua para el Innovation Challenge de University of Maryland usando SolidWorks e impresión 3D. Realicé pruebas y presenté en simposio STEM, obteniendo 1er lugar por solución innovadora.",
     image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Gráficos y análisis de datos financieros en pantalla",
-    technologies: ["React Native", "Python", "MATLAB"],
-    techColors: ["bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200", "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200"]
+    alt: "Componentes de separador de aceite-agua y diagramas técnicos",
+    technologies: ["SolidWorks", "Impresión 3D", "Testing"],
+    techColors: ["bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200", "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200"]
   },
   {
     id: 3,
-    title: "Sistema de Monitoreo IoT",
-    description: "Construí un sistema IoT personalizado para monitoreo de infraestructura crítica, permitiendo medición precisa de parámetros con recolección y análisis automatizado de datos.",
-    image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Equipos de monitoreo con sensores y instrumentos de medición",
-    technologies: ["IoT", "Instrumentación", "Análisis de Datos"],
-    techColors: ["bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200"]
+    title: "Automated Assembly Line (Demo)",
+    description: "Construí un sistema de línea de ensamblaje a pequeña escala usando Arduino y lógica tipo PLC. Simulé un sistema de entrega de piezas para aumentar la eficiencia del proceso de manufactura.",
+    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    alt: "Sistema automatizado con brazos robóticos y cintas transportadoras",
+    technologies: ["Arduino", "PLC Logic", "Automation"],
+    techColors: ["bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200", "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200", "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200"]
   },
   {
     id: 4,
-    title: "Optimizador de Procesos Digitales",
-    description: "Diseñé un algoritmo de optimización para procesos de transformación digital que maximiza la eficiencia operacional minimizando costos para aplicaciones empresariales.",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Sistema de energía renovable con paneles solares y turbinas eólicas",
-    technologies: ["Python", "Optimización", "Transformación Digital"],
-    techColors: ["bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200", "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200"]
+    title: "Heat Exchanger Project",
+    description: "Diseñé y analicé un sistema de intercambiador de calor usando ANSYS Fluent. Logré un aumento del 25% en eficiencia térmica a través de simulación computacional y optimización de flujo de fluidos.",
+    image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    alt: "Análisis térmico y componentes de intercambiador de calor",
+    technologies: ["ANSYS Fluent", "CFD", "Thermal Analysis"],
+    techColors: ["bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200", "bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200"]
   }
 ];
 

@@ -79,12 +79,34 @@ export function BankingFitSection() {
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl animate-fadeInUp">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4 text-primary">Mi Compromiso con Oriental Bank</h3>
-            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl mx-auto mb-6">
               Estoy preparado para aportar mi experiencia técnica, creatividad y dedicación para impulsar 
               la transformación digital de Oriental Bank. Mi enfoque proactivo y mi pasión por la innovación 
-              me permitirán contribuir significativamente a los objetivos estratégicos de la institución, 
-              ya sea en roles de innovación, tecnología, automatización o soporte técnico.
+              me permitirán contribuir significativamente a los objetivos estratégicos de la institución.
             </p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
+              <div className="flex flex-col items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
+                <div className="text-2xl font-bold text-primary">✅</div>
+                <div className="text-sm font-semibold text-center">Puente entre ingeniería y tecnología</div>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-green-50 dark:bg-green-900/20 rounded-xl">
+                <div className="text-2xl font-bold text-primary">✅</div>
+                <div className="text-sm font-semibold text-center">Comunicador bilingüe (Inglés/Español)</div>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
+                <div className="text-2xl font-bold text-primary">✅</div>
+                <div className="text-sm font-semibold text-center">Autodidacta en automatización y apps</div>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
+                <div className="text-2xl font-bold text-primary">✅</div>
+                <div className="text-sm font-semibold text-center">Innovación en sistemas obsoletos</div>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-teal-50 dark:bg-teal-900/20 rounded-xl">
+                <div className="text-2xl font-bold text-primary">✅</div>
+                <div className="text-sm font-semibold text-center">Listo para transformación digital</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

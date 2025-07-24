@@ -42,12 +42,11 @@ Oriental Bank hiring managers and HR team looking for candidates with:
 - Focus on real-world applicable projects
 
 ## Recent Changes
-- Customized portfolio for Oriental Bank application (2025-01-24)
-- Updated color scheme to professional navy blue (#002244) and light blue (#0070f3)
-- Converted all content to Spanish for Puerto Rican context
-- Restructured sections: Home, Sobre Mí, Habilidades, Proyectos, Oriental Bank, Contacto
-- Updated projects to focus on banking automation and digital transformation
-- Created dedicated "¿Por qué Oriental Bank?" section highlighting candidate fit
-- Updated skills to emphasize automation, Python, React Native, and problem-solving
-- Localized contact information to Puerto Rico (+1 787 area code, San Juan location)
-- Enhanced hero section with banking industry specialization messaging
+- Updated portfolio with real projects and specific technical skills (2025-01-24)
+- Added authentic project cards: Spots App (React Native/Firebase), Oil-Water Separator (SolidWorks/3D printing), Automated Assembly Line (Arduino/PLC), Heat Exchanger (ANSYS Fluent)
+- Enhanced skills section with actual tools: Arduino, PLC Logic, Firebase, React Native
+- Added dedicated automation tools section showcasing Zapier, Google Apps Script, GitHub
+- Updated banking fit section with 5-point value proposition grid
+- Emphasized bilingual communication and bridge between engineering/technology
+- All projects now include specific technologies with visual badges
+- Enhanced Oriental Bank section with concrete examples of candidate value
