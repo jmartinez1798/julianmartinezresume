@@ -43,9 +43,10 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Implemented authentic Martinez logo design based on user's actual brand (2025-01-24)
-- Recreated three diagonal stripes with proper rotation and positioning to match real logo
-- Updated all logo components across website with authentic Martinez brand identity
-- Applied consistent logo styling in navigation, hero section, patterns, and footer
-- Created professional resume-ready logo component with authentic design
-- Enhanced brand coherence throughout portfolio with real Martinez Company visual identity
+- Enhanced hero section with interactive skills showcase featuring hover tooltips (2025-01-24)
+- Added 6 key technical skills: SolidWorks (90%), Arduino/PLC (70%), ANSYS (80%), React/Firebase (60%), Problem Solving (85%)
+- Implemented skill proficiency indicators with color-coded progress bars
+- Converted all content to English for international professional market
+- Removed profile picture and added technical icons with emojis for visual appeal
+- Created comprehensive skill tooltips showing experience and achievements
+- Improved CTA buttons with enhanced animations and professional English text
