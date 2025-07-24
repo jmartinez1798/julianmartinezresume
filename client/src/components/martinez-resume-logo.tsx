@@ -29,23 +29,25 @@ export function MartinezResumeLogo({ size = 'md', showText = true, variant = 'da
           height="100%"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Professional M silhouette for resume */}
+          {/* Professional M for Martinez Company */}
           <g>
-            {/* Left stroke of M */}
+            {/* Left vertical line of M */}
+            <rect x="15" y="15" width="8" height="70" fill={currentColors.logo} />
+            
+            {/* Left diagonal of M */}
             <path
-              d="M10 85 L18 15 L28 20 L22 85 Z"
+              d="M23 15 L50 55 L54 50 L27 15 Z"
               fill={currentColors.logo}
             />
-            {/* Center stroke of M */}
+            
+            {/* Right diagonal of M */}
             <path
-              d="M28 85 L42 15 L58 15 L52 85 Z"
+              d="M50 55 L77 15 L81 15 L54 50 Z"
               fill={currentColors.logo}
             />
-            {/* Right stroke of M */}
-            <path
-              d="M72 85 L78 20 L88 15 L90 85 Z"
-              fill={currentColors.logo}
-            />
+            
+            {/* Right vertical line of M */}
+            <rect x="77" y="15" width="8" height="70" fill={currentColors.logo} />
           </g>
         </svg>
       </div>
@@ -88,9 +90,10 @@ export function getMartinezLogoSVG(color: string = '#002244'): string {
   return `
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <g>
-        <path d="M10 85 L18 15 L28 20 L22 85 Z" fill="${color}"/>
-        <path d="M28 85 L42 15 L58 15 L52 85 Z" fill="${color}"/>
-        <path d="M72 85 L78 20 L88 15 L90 85 Z" fill="${color}"/>
+        <rect x="15" y="15" width="8" height="70" fill="${color}"/>
+        <path d="M23 15 L50 55 L54 50 L27 15 Z" fill="${color}"/>
+        <path d="M50 55 L77 15 L81 15 L54 50 Z" fill="${color}"/>
+        <rect x="77" y="15" width="8" height="70" fill="${color}"/>
       </g>
     </svg>
   `;

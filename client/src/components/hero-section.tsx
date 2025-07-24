@@ -41,23 +41,30 @@ export function HeroSection() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g>
+                  {/* Left vertical line of M */}
+                  <rect x="15" y="20" width="8" height="60" fill="#002244" 
+                    className="transform origin-center group-hover:scale-110 transition-transform duration-300" />
+                  
+                  {/* Left diagonal of M */}
                   <path
-                    d="M10 80 L20 20 L30 25 L25 80 Z"
-                    fill="#002244"
-                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <path
-                    d="M30 80 L45 20 L55 20 L50 80 Z"
+                    d="M23 20 L50 55 L54 50 L27 20 Z"
                     fill="#002244"
                     className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                     style={{ animationDelay: '0.1s' }}
                   />
+                  
+                  {/* Right diagonal of M */}
                   <path
-                    d="M70 80 L75 25 L85 20 L90 80 Z"
+                    d="M50 55 L77 20 L81 20 L54 50 Z"
                     fill="#002244"
                     className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                     style={{ animationDelay: '0.2s' }}
                   />
+                  
+                  {/* Right vertical line of M */}
+                  <rect x="77" y="20" width="8" height="60" fill="#002244" 
+                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                    style={{ animationDelay: '0.3s' }} />
                 </g>
               </svg>
             </div>
