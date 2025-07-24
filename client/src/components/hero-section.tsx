@@ -41,18 +41,18 @@ export function HeroSection() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M20 70 L35 25 L45 35 L35 70 Z"
+                  d="M15 75 L25 20 L35 25 L25 75 Z"
                   fill="#002244"
                   className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                 />
                 <path
-                  d="M40 70 L50 25 L60 35 L55 70 Z"
+                  d="M35 75 L50 15 L65 15 L50 75 Z"
                   fill="#002244"
                   className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                   style={{ animationDelay: '0.1s' }}
                 />
                 <path
-                  d="M60 70 L75 25 L85 35 L70 70 Z"
+                  d="M65 75 L75 20 L85 25 L75 75 Z"
                   fill="#002244"
                   className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                   style={{ animationDelay: '0.2s' }}

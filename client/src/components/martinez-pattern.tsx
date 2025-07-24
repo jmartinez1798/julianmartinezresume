@@ -16,9 +16,9 @@ export function MartinezPattern({ className = '', opacity = 0.05 }: MartinezPatt
           <pattern id="martinez-stripes" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
             {/* Repeating M stripes pattern */}
             <g transform="scale(0.4)">
-              <path d="M20 70 L35 25 L45 35 L35 70 Z" fill="currentColor" />
-              <path d="M40 70 L50 25 L60 35 L55 70 Z" fill="currentColor" />
-              <path d="M60 70 L75 25 L85 35 L70 70 Z" fill="currentColor" />
+              <path d="M15 75 L25 20 L35 25 L25 75 Z" fill="currentColor" />
+              <path d="M35 75 L50 15 L65 15 L50 75 Z" fill="currentColor" />
+              <path d="M65 75 L75 20 L85 25 L75 75 Z" fill="currentColor" />
             </g>
           </pattern>
         </defs>
@@ -45,9 +45,9 @@ export function MartinezAccent({ position = 'top-right', size = 'md' }: { positi
   return (
     <div className={`absolute ${positionClasses[position]} ${sizeClasses[size]} opacity-10 pointer-events-none`}>
       <svg viewBox="0 0 100 100" className="w-full h-full text-primary">
-        <path d="M20 70 L35 25 L45 35 L35 70 Z" fill="currentColor" />
-        <path d="M40 70 L50 25 L60 35 L55 70 Z" fill="currentColor" />
-        <path d="M60 70 L75 25 L85 35 L70 70 Z" fill="currentColor" />
+        <path d="M15 75 L25 20 L35 25 L25 75 Z" fill="currentColor" />
+        <path d="M35 75 L50 15 L65 15 L50 75 Z" fill="currentColor" />
+        <path d="M65 75 L75 20 L85 25 L75 75 Z" fill="currentColor" />
       </svg>
     </div>
   );
