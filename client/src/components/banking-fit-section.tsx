@@ -49,38 +49,49 @@ export function BankingFitSection() {
             Áreas de Interés Profesional
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto animate-fadeInUp mb-8">
-            Mi combinación de formación técnica, experiencia práctica y pasión por la innovación 
-            me permite contribuir en diferentes sectores industriales y tecnológicos.
+            Estoy interesado en comenzar mi carrera profesional en un rol híbrido o técnico donde pueda 
+            aplicar lo aprendido, seguir creciendo, y trabajar con personas que valoren la innovación 
+            y el trabajo bien hecho.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-6">
-              <h3 className="text-lg font-bold mb-4 text-primary">🏦 Sector Bancario y Finanzas</h3>
-              <div className="grid gap-2">
-                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                  <div className="font-semibold text-sm">Digital Transformation Intern</div>
-                </div>
-                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                  <div className="font-semibold text-sm">IT Support Hybrid</div>
-                </div>
-                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                  <div className="font-semibold text-sm">Data Automation Analyst</div>
-                </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl p-4">
+              <div className="text-center">
+                <div className="text-2xl mb-2">💡</div>
+                <h3 className="font-bold text-sm mb-2">Digital Innovation & Automation</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">(banca o ingeniería)</p>
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-2xl p-6">
-              <h3 className="text-lg font-bold mb-4 text-primary">🔧 Ingeniería y Tecnología</h3>
-              <div className="grid gap-2">
-                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                  <div className="font-semibold text-sm">Engineering Intern (Raytheon, Honeywell)</div>
-                </div>
-                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                  <div className="font-semibold text-sm">Automation Technician</div>
-                </div>
-                <div className="bg-white dark:bg-slate-800 rounded-lg p-3 shadow-sm">
-                  <div className="font-semibold text-sm">Systems Design Assistant</div>
-                </div>
+            <div className="bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-xl p-4">
+              <div className="text-center">
+                <div className="text-2xl mb-2">🛠️</div>
+                <h3 className="font-bold text-sm mb-2">Diseño y prototipado de productos</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">SolidWorks, impresión 3D</p>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl p-4">
+              <div className="text-center">
+                <div className="text-2xl mb-2">📊</div>
+                <h3 className="font-bold text-sm mb-2">Análisis técnico y simulación</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">ANSYS, MATLAB</p>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-xl p-4">
+              <div className="text-center">
+                <div className="text-2xl mb-2">⚙️</div>
+                <h3 className="font-bold text-sm mb-2">Proyectos de mejora de procesos</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">Automatización, eficiencia</p>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-teal-50 to-teal-100 dark:from-teal-900/20 dark:to-teal-800/20 rounded-xl p-4 md:col-span-2 lg:col-span-1">
+              <div className="text-center">
+                <div className="text-2xl mb-2">🎯</div>
+                <h3 className="font-bold text-sm mb-2">Soporte técnico y aprendizaje aplicado</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">IT, resolución de problemas</p>
               </div>
             </div>
           </div>
@@ -110,33 +121,29 @@ export function BankingFitSection() {
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl animate-fadeInUp">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Mi Propuesta de Valor</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Lo que Aporto</h3>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl mx-auto mb-6">
-              Estoy preparado para aportar mi experiencia técnica, creatividad y dedicación en cualquier industria. 
-              Mi enfoque proactivo y mi pasión por la innovación me permitirán contribuir significativamente 
-              en proyectos de ingeniería, tecnología o transformación digital.
+              Como estudiante de ingeniería comprometido con el aprendizaje continuo, aporto una perspectiva 
+              fresca, habilidades técnicas en desarrollo y una fuerte motivación para contribuir al éxito 
+              de proyectos significativos.
             </p>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               <div className="flex flex-col items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
                 <div className="text-sm font-semibold text-center">Puente entre ingeniería y tecnología</div>
               </div>
               <div className="flex flex-col items-center p-3 bg-green-50 dark:bg-green-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Comunicador bilingüe (Inglés/Español)</div>
+                <div className="text-sm font-semibold text-center">Comunicación bilingüe efectiva</div>
               </div>
               <div className="flex flex-col items-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Autodidacta con disposición a aprender</div>
+                <div className="text-sm font-semibold text-center">Aprendizaje autodirigido y adaptabilidad</div>
               </div>
               <div className="flex flex-col items-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
                 <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Enfoque en resolver problemas reales</div>
-              </div>
-              <div className="flex flex-col items-center p-3 bg-teal-50 dark:bg-teal-900/20 rounded-xl">
-                <div className="text-2xl font-bold text-primary">✅</div>
-                <div className="text-sm font-semibold text-center">Experiencia práctica en proyectos</div>
+                <div className="text-sm font-semibold text-center">Enfoque práctico en resolución de problemas</div>
               </div>
             </div>
           </div>
