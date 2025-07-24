@@ -1,7 +1,22 @@
+import { MartinezResumeLogo } from "./martinez-resume-logo";
+
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800 relative">
       <div className="max-w-6xl mx-auto">
+        {/* Resume Logo Preview */}
+        <div className="text-center mb-12">
+          <div className="inline-block p-6 bg-slate-50 dark:bg-slate-700 rounded-2xl shadow-lg">
+            <h3 className="text-sm font-semibold text-slate-600 dark:text-slate-300 mb-4">Logo para Currículum</h3>
+            <div className="flex flex-col gap-6">
+              <MartinezResumeLogo size="sm" variant="dark" />
+              <MartinezResumeLogo size="md" variant="dark" />
+              <MartinezResumeLogo size="lg" variant="dark" />
+            </div>
+          </div>
+        </div>
+        
+        
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
           Sobre Mí
         </h2>

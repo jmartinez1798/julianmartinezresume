@@ -40,23 +40,25 @@ export function HeroSection() {
                 className="w-16 h-16"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  d="M15 75 L25 20 L35 25 L25 75 Z"
-                  fill="#002244"
-                  className="transform origin-center group-hover:scale-110 transition-transform duration-300"
-                />
-                <path
-                  d="M35 75 L50 15 L65 15 L50 75 Z"
-                  fill="#002244"
-                  className="transform origin-center group-hover:scale-110 transition-transform duration-300"
-                  style={{ animationDelay: '0.1s' }}
-                />
-                <path
-                  d="M65 75 L75 20 L85 25 L75 75 Z"
-                  fill="#002244"
-                  className="transform origin-center group-hover:scale-110 transition-transform duration-300"
-                  style={{ animationDelay: '0.2s' }}
-                />
+                <g>
+                  <path
+                    d="M10 80 L20 20 L30 25 L25 80 Z"
+                    fill="#002244"
+                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <path
+                    d="M30 80 L45 20 L55 20 L50 80 Z"
+                    fill="#002244"
+                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                    style={{ animationDelay: '0.1s' }}
+                  />
+                  <path
+                    d="M70 80 L75 25 L85 20 L90 80 Z"
+                    fill="#002244"
+                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                    style={{ animationDelay: '0.2s' }}
+                  />
+                </g>
               </svg>
             </div>
           </div>
