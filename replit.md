@@ -43,9 +43,9 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Updated skills section with realistic percentages reflecting current student abilities (2025-01-24)
-- Adjusted technical skills: SolidWorks 90%, Arduino/PLC 70%, ANSYS Fluent 80%
-- Updated software skills: Python (basic-intermediate) 65%, React Native+Firebase 70%
-- Enhanced soft skills focus: Bilingual Communication 95%, Self-directed Learning 95%
-- Reorganized automation tools to reflect actual experience levels vs inflated claims
-- Maintained authentic student perspective throughout skills presentation
+- Updated projects section to emphasize authentic learning experiences and real outcomes (2025-01-24)
+- Added emojis and personal learning reflections to each project description
+- Emphasized actual results: 1st place in UMD competition, 25% simulated efficiency improvement
+- Highlighted learning aspects: "aprendí sobre base de datos", "me permitió aplicar principios"
+- Maintained focus on experiential learning and practical skill development
+- Kept realistic project scope appropriate for student level work
