@@ -15,36 +15,36 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Technical Skills",
+    title: "Habilidades Técnicas",
     icon: <Settings className="text-white text-2xl" />,
     color: "bg-blue-500",
     skills: [
-      { name: "Mechanical Design", percentage: 95 },
-      { name: "Thermodynamics", percentage: 90 },
-      { name: "Fluid Mechanics", percentage: 88 },
-      { name: "Materials Science", percentage: 85 }
+      { name: "Diseño Mecánico", percentage: 95 },
+      { name: "Automatización", percentage: 90 },
+      { name: "Análisis de Sistemas", percentage: 88 },
+      { name: "Ingeniería de Procesos", percentage: 85 }
     ]
   },
   {
-    title: "Software Skills", 
+    title: "Tecnologías y Software", 
     icon: <Laptop className="text-white text-2xl" />,
     color: "bg-emerald-500",
     skills: [
+      { name: "Python", percentage: 85 },
       { name: "SolidWorks", percentage: 95 },
-      { name: "ANSYS", percentage: 85 },
       { name: "MATLAB", percentage: 80 },
-      { name: "Python", percentage: 75 }
+      { name: "React Native", percentage: 70 }
     ]
   },
   {
-    title: "Soft Skills",
+    title: "Competencias Profesionales",
     icon: <Users className="text-white text-2xl" />,
     color: "bg-purple-500", 
     skills: [
-      { name: "Problem Solving", percentage: 98 },
-      { name: "Team Collaboration", percentage: 92 },
-      { name: "Communication", percentage: 88 },
-      { name: "Leadership", percentage: 85 }
+      { name: "Resolución de Problemas", percentage: 98 },
+      { name: "Pensamiento Analítico", percentage: 92 },
+      { name: "Comunicación", percentage: 88 },
+      { name: "Adaptabilidad", percentage: 90 }
     ]
   }
 ];
@@ -78,7 +78,7 @@ export function SkillsSection() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
-          Skills & Expertise
+          Habilidades y Competencias
         </h2>
         
         <div className="grid lg:grid-cols-3 gap-8">

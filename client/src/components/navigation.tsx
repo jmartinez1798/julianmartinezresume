@@ -9,11 +9,12 @@ export function Navigation() {
   const { theme, setTheme } = useTheme();
 
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "skills", label: "Skills" },
-    { id: "contact", label: "Contact" },
+    { id: "home", label: "Inicio" },
+    { id: "about", label: "Sobre Mí" },
+    { id: "skills", label: "Habilidades" },
+    { id: "projects", label: "Proyectos" },
+    { id: "banking-fit", label: "Oriental Bank" },
+    { id: "contact", label: "Contacto" },
   ];
 
   useEffect(() => {

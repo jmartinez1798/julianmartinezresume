@@ -35,8 +35,12 @@ export function HeroSection() {
           Julián Martínez
         </h1>
         
-        <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
-          Mechanical Engineering Student passionate about innovation, design, and creating solutions that matter.
+        <div className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-2 font-semibold">
+          Estudiante de Ingeniería Mecánica · Innovador Tecnológico · Solucionador de Problemas
+        </div>
+        
+        <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+          Especializado en automatización de procesos, transformación digital y desarrollo de soluciones tecnológicas para el sector bancario.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -45,7 +49,7 @@ export function HeroSection() {
             className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <Download className="mr-2 h-5 w-5" />
-            Download Resume
+            Descargar CV
           </Button>
           
           <Button
@@ -53,7 +57,7 @@ export function HeroSection() {
             onClick={scrollToProjects}
             className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold transition-all duration-300"
           >
-            View My Work
+            Ver Proyectos
           </Button>
         </div>
 

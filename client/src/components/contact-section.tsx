@@ -32,15 +32,15 @@ export function ContactSection() {
     },
     onSuccess: () => {
       toast({
-        title: "Message sent successfully!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "¡Mensaje enviado exitosamente!",
+        description: "Gracias por tu mensaje. Me pondré en contacto contigo pronto.",
       });
       form.reset();
     },
     onError: (error: Error) => {
       toast({
-        title: "Failed to send message",
-        description: error.message || "Please try again later.",
+        title: "Error al enviar mensaje",
+        description: error.message || "Por favor intenta de nuevo más tarde.",
         variant: "destructive",
       });
     },
@@ -54,15 +54,15 @@ export function ContactSection() {
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
-          Get In Touch
+          Contacto
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div className="animate-slideInLeft">
-            <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
+            <h3 className="text-2xl font-bold mb-6">Conectemos</h3>
             <p className="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-              I'm always interested in discussing new opportunities, innovative projects, 
-              or simply connecting with fellow engineers and professionals in the field.
+              Siempre estoy interesado en discutir nuevas oportunidades, proyectos innovadores, 
+              especialmente en el sector bancario y tecnológico. ¡Contáctame para explorar cómo puedo contribuir a Oriental Bank!
             </p>
             
             <div className="space-y-4">
@@ -71,7 +71,7 @@ export function ContactSection() {
                   <Mail className="text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold">Email</div>
+                  <div className="font-semibold">Correo</div>
                   <div className="text-slate-600 dark:text-slate-300">julian.martinez@email.com</div>
                 </div>
               </div>
@@ -81,8 +81,8 @@ export function ContactSection() {
                   <Phone className="text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold">Phone</div>
-                  <div className="text-slate-600 dark:text-slate-300">+1 (555) 123-4567</div>
+                  <div className="font-semibold">Teléfono</div>
+                  <div className="text-slate-600 dark:text-slate-300">+1 (787) 555-0123</div>
                 </div>
               </div>
               
@@ -91,8 +91,8 @@ export function ContactSection() {
                   <MapPin className="text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold">Location</div>
-                  <div className="text-slate-600 dark:text-slate-300">University City, State</div>
+                  <div className="font-semibold">Ubicación</div>
+                  <div className="text-slate-600 dark:text-slate-300">San Juan, Puerto Rico</div>
                 </div>
               </div>
             </div>
@@ -107,9 +107,9 @@ export function ContactSection() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel>Nombre</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your name" {...field} />
+                          <Input placeholder="Tu nombre" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -135,9 +135,9 @@ export function ContactSection() {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel>Asunto</FormLabel>
                         <FormControl>
-                          <Input placeholder="What's this about?" {...field} />
+                          <Input placeholder="¿De qué se trata?" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -149,10 +149,10 @@ export function ContactSection() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>Mensaje</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Tell me about your project or idea..."
+                            placeholder="Cuéntame sobre tu proyecto o idea..."
                             className="resize-none"
                             rows={6}
                             {...field}
@@ -171,10 +171,10 @@ export function ContactSection() {
                     {contactMutation.isPending ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Sending...
+                        Enviando...
                       </>
                     ) : (
-                      "Send Message"
+                      "Enviar Mensaje"
                     )}
                   </Button>
                 </form>

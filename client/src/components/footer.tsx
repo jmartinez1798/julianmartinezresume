@@ -32,7 +32,7 @@ export function Footer() {
           
           <div className="border-t border-slate-700 pt-8">
             <p className="text-slate-400">
-              © 2024 Julián Martínez. Designed & Built with passion for engineering excellence.
+              © 2025 Julián Martínez. Diseñado con pasión por la excelencia en ingeniería y la innovación tecnológica.
             </p>
           </div>
         </div>
