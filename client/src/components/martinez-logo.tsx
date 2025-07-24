@@ -30,25 +30,28 @@ export function MartinezLogo({ size = 'md', variant = 'primary', className = '' 
         className="w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Clear M silhouette for Martinez Company */}
+        {/* Martinez authentic logo - three diagonal stripes */}
         <g>
-          {/* Left vertical line of M */}
-          <rect x="15" y="20" width="8" height="60" fill={getStrokeColor()} />
-          
-          {/* Left diagonal of M */}
+          {/* Left diagonal stripe */}
           <path
-            d="M23 20 L50 55 L54 50 L27 20 Z"
+            d="M20 25 L35 70 L45 65 L30 20 Z"
             fill={getStrokeColor()}
+            transform="rotate(-15 37.5 45)"
           />
           
-          {/* Right diagonal of M */}
+          {/* Center diagonal stripe */}
           <path
-            d="M50 55 L77 20 L81 20 L54 50 Z"
+            d="M40 25 L55 70 L65 65 L50 20 Z"
             fill={getStrokeColor()}
+            transform="rotate(-15 57.5 45)"
           />
           
-          {/* Right vertical line of M */}
-          <rect x="77" y="20" width="8" height="60" fill={getStrokeColor()} />
+          {/* Right diagonal stripe */}
+          <path
+            d="M60 25 L75 70 L85 65 L70 20 Z"
+            fill={getStrokeColor()}
+            transform="rotate(-15 77.5 45)"
+          />
         </g>
       </svg>
     </div>

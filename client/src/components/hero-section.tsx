@@ -41,30 +41,31 @@ export function HeroSection() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g>
-                  {/* Left vertical line of M */}
-                  <rect x="15" y="20" width="8" height="60" fill="#002244" 
-                    className="transform origin-center group-hover:scale-110 transition-transform duration-300" />
-                  
-                  {/* Left diagonal of M */}
+                  {/* Left diagonal stripe */}
                   <path
-                    d="M23 20 L50 55 L54 50 L27 20 Z"
+                    d="M20 25 L35 70 L45 65 L30 20 Z"
                     fill="#002244"
+                    transform="rotate(-15 37.5 45)"
+                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                  />
+                  
+                  {/* Center diagonal stripe */}
+                  <path
+                    d="M40 25 L55 70 L65 65 L50 20 Z"
+                    fill="#002244"
+                    transform="rotate(-15 57.5 45)"
                     className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                     style={{ animationDelay: '0.1s' }}
                   />
                   
-                  {/* Right diagonal of M */}
+                  {/* Right diagonal stripe */}
                   <path
-                    d="M50 55 L77 20 L81 20 L54 50 Z"
+                    d="M60 25 L75 70 L85 65 L70 20 Z"
                     fill="#002244"
+                    transform="rotate(-15 77.5 45)"
                     className="transform origin-center group-hover:scale-110 transition-transform duration-300"
                     style={{ animationDelay: '0.2s' }}
                   />
-                  
-                  {/* Right vertical line of M */}
-                  <rect x="77" y="20" width="8" height="60" fill="#002244" 
-                    className="transform origin-center group-hover:scale-110 transition-transform duration-300"
-                    style={{ animationDelay: '0.3s' }} />
                 </g>
               </svg>
             </div>

@@ -51,10 +51,9 @@ export function Footer() {
           <defs>
             <pattern id="footer-stripes" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
               <g transform="scale(0.3)" fill="white">
-                <rect x="15" y="20" width="8" height="60" />
-                <path d="M23 20 L50 55 L54 50 L27 20 Z" />
-                <path d="M50 55 L77 20 L81 20 L54 50 Z" />
-                <rect x="77" y="20" width="8" height="60" />
+                <path d="M20 25 L35 70 L45 65 L30 20 Z" transform="rotate(-15 37.5 45)" />
+                <path d="M40 25 L55 70 L65 65 L50 20 Z" transform="rotate(-15 57.5 45)" />
+                <path d="M60 25 L75 70 L85 65 L70 20 Z" transform="rotate(-15 77.5 45)" />
               </g>
             </pattern>
           </defs>

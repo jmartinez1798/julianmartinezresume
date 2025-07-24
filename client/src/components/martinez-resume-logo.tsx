@@ -29,25 +29,28 @@ export function MartinezResumeLogo({ size = 'md', showText = true, variant = 'da
           height="100%"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Professional M for Martinez Company */}
+          {/* Martinez authentic logo for resume */}
           <g>
-            {/* Left vertical line of M */}
-            <rect x="15" y="15" width="8" height="70" fill={currentColors.logo} />
-            
-            {/* Left diagonal of M */}
+            {/* Left diagonal stripe */}
             <path
-              d="M23 15 L50 55 L54 50 L27 15 Z"
+              d="M20 20 L35 70 L45 65 L30 15 Z"
               fill={currentColors.logo}
+              transform="rotate(-15 37.5 42.5)"
             />
             
-            {/* Right diagonal of M */}
+            {/* Center diagonal stripe */}
             <path
-              d="M50 55 L77 15 L81 15 L54 50 Z"
+              d="M40 20 L55 70 L65 65 L50 15 Z"
               fill={currentColors.logo}
+              transform="rotate(-15 57.5 42.5)"
             />
             
-            {/* Right vertical line of M */}
-            <rect x="77" y="15" width="8" height="70" fill={currentColors.logo} />
+            {/* Right diagonal stripe */}
+            <path
+              d="M60 20 L75 70 L85 65 L70 15 Z"
+              fill={currentColors.logo}
+              transform="rotate(-15 77.5 42.5)"
+            />
           </g>
         </svg>
       </div>
@@ -90,10 +93,9 @@ export function getMartinezLogoSVG(color: string = '#002244'): string {
   return `
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <g>
-        <rect x="15" y="15" width="8" height="70" fill="${color}"/>
-        <path d="M23 15 L50 55 L54 50 L27 15 Z" fill="${color}"/>
-        <path d="M50 55 L77 15 L81 15 L54 50 Z" fill="${color}"/>
-        <rect x="77" y="15" width="8" height="70" fill="${color}"/>
+        <path d="M20 20 L35 70 L45 65 L30 15 Z" fill="${color}" transform="rotate(-15 37.5 42.5)"/>
+        <path d="M40 20 L55 70 L65 65 L50 15 Z" fill="${color}" transform="rotate(-15 57.5 42.5)"/>
+        <path d="M60 20 L75 70 L85 65 L70 15 Z" fill="${color}" transform="rotate(-15 77.5 42.5)"/>
       </g>
     </svg>
   `;
