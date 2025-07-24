@@ -7,6 +7,7 @@ import { BankingFitSection } from "@/components/banking-fit-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { LoadingSpinner } from "@/components/loading-spinner";
+import { FloatingActionButton } from "@/components/floating-action-button";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <BankingFitSection />
         <ContactSection />
         <Footer />
+        <FloatingActionButton />
       </div>
     </>
   );

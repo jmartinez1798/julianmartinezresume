@@ -31,8 +31,8 @@ export function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center animate-fadeInUp">
         <div className="mb-8">
-          <div className="w-32 h-32 rounded-full mx-auto shadow-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-white dark:border-slate-700">
-            <div className="text-4xl font-bold text-white">JM</div>
+          <div className="w-32 h-32 rounded-full mx-auto shadow-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-white dark:border-slate-700 transform hover:scale-110 transition-all duration-300 cursor-pointer group">
+            <div className="text-4xl font-bold text-white group-hover:rotate-12 transition-transform duration-300">JM</div>
           </div>
         </div>
         

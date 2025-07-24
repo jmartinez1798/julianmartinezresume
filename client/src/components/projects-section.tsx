@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 const projects = [
   {
@@ -42,6 +43,8 @@ const projects = [
 ];
 
 export function ProjectsSection() {
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -53,20 +56,33 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card 
               key={project.id} 
-              className={`group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
+              className={`group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 hover:border-primary/20 cursor-pointer ${
                 index % 2 === 0 ? 'animate-slideInLeft' : 'animate-slideInRight'
               }`}
+              onMouseEnter={() => setHoveredProject(project.id)}
+              onMouseLeave={() => setHoveredProject(null)}
             >
-              <div className="overflow-hidden">
+              <div className="relative overflow-hidden">
                 <img 
                   src={project.image}
                   alt={project.alt}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                
+                {hoveredProject === project.id && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-full p-3 transform scale-0 group-hover:scale-100 transition-transform duration-300">
+                      <ExternalLink className="h-6 w-6 text-primary" />
+                    </div>
+                  </div>
+                )}
               </div>
               
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </h3>
                 <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
@@ -76,7 +92,7 @@ export function ProjectsSection() {
                     <Badge 
                       key={techIndex}
                       variant="secondary"
-                      className={project.techColors[techIndex]}
+                      className={`${project.techColors[techIndex]} transform hover:scale-110 transition-all duration-200`}
                     >
                       {tech}
                     </Badge>
@@ -85,7 +101,7 @@ export function ProjectsSection() {
                 
                 <button className="text-primary hover:text-primary/80 font-semibold inline-flex items-center group/arrow">
                   Ver Detalles 
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover/arrow:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover/arrow:translate-x-2 group-hover/arrow:rotate-12 transition-all duration-300" />
                 </button>
               </CardContent>
             </Card>

@@ -43,8 +43,10 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Replaced generic profile photo with professional initials placeholder (JM) (2025-01-24)
-- Created gradient circle design with initials to maintain professional appearance
-- Removed stock photo that didn't represent the actual person
-- Maintained visual consistency with brand colors and professional styling
-- Ready for future replacement with actual professional photo when available
+- Added enhanced interactivity throughout the portfolio (2025-01-24)
+- Created FloatingActionButton with quick access to download CV, contact, and call functions
+- Enhanced project cards with hover effects, scale animations, and interactive overlays
+- Added animated profile initials with hover rotation and scale effects
+- Implemented staggered animations for better visual flow
+- Created AnimatedCounter component for future statistics display
+- Improved user engagement with smooth transitions and micro-interactions
