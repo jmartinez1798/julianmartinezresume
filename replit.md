@@ -43,6 +43,7 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
+- **Enhanced University of Maryland Project (2025-01-24)**: Updated project title to highlight ESTEEM-Ser Quest program name and enhanced description with prestigious program recognition
 - **Final Spanish-to-English Conversion Complete (2025-01-24)**: Translated remaining Spanish content in Skills Section, Automation Tools Section, and Loading Spinner - website now 100% in English
 - **Prestigious Achievements Added (2025-01-24)**: Integrated global VEX Robotics competition awards and selective University of Maryland research program (1 of 3 students from Puerto Rico) with real-world impact in ocean oil spill cleanup technology
 - **Academic Trajectory Added (2025-01-24)**: Integrated authentic academic background showing 2 years Aerospace Engineering at Penn State University (PSU) and full scholarship transition to Mechanical Engineering at Inter Bayamón due to pandemic

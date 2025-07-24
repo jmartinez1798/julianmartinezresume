@@ -16,11 +16,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "🔬 Oil-Water Separator",
-    description: "Selected as one of 3 students from Puerto Rico for fully-funded research program at University of Maryland. Developed superhydrophobic and hydrophilic fiber technology that separates oil from water in 6 weeks, working alongside gifted US students. Research currently used in ships for ocean oil spill cleanup. Won 1st place in innovation competition.",
+    title: "🔬 University of Maryland Research Program (ESTEEM-Ser Quest)",
+    description: "Selected as one of 3 students from Puerto Rico for the prestigious ESTEEM-Ser Quest program at University of Maryland. Developed breakthrough superhydrophobic and hydrophilic fiber technology for oil-water separation in 6 weeks, collaborating with exceptional US students. Research breakthrough now implemented in ships for ocean oil spill cleanup operations. Won 1st place in innovation competition.",
     image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
     alt: "Oil-water separator components and technical diagrams",
-    technologies: ["SolidWorks", "3D Printing", "Testing"],
+    technologies: ["Materials Research", "Fiber Technology", "SolidWorks"],
     techColors: ["bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200", "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200"]
   },
   {
