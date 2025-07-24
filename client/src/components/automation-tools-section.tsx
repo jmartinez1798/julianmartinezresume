@@ -8,26 +8,26 @@ const automationTools = [
     icon: <Cpu className="text-white text-xl" />,
     color: "bg-blue-500",
     tools: [
-      { name: "Arduino", level: "Intermedio", color: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
+      { name: "Arduino", level: "Básico-Intermedio", color: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
       { name: "PLC Logic", level: "Básico", color: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
     ]
   },
   {
-    title: "Automatización Digital",
+    title: "Software de Diseño",
     icon: <Zap className="text-white text-xl" />,
     color: "bg-orange-500",
     tools: [
-      { name: "Zapier", level: "Avanzado", color: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200" },
-      { name: "Google Apps Script", level: "Intermedio", color: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200" },
+      { name: "SolidWorks", level: "Avanzado", color: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200" },
+      { name: "ANSYS Fluent", level: "Intermedio", color: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200" },
     ]
   },
   {
-    title: "Control de Versiones",
+    title: "Herramientas Complementarias",
     icon: <Github className="text-white text-xl" />,
     color: "bg-gray-600",
     tools: [
-      { name: "GitHub", level: "Avanzado", color: "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200" },
-      { name: "Version Control", level: "Avanzado", color: "bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200" },
+      { name: "GitHub", level: "Intermedio", color: "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200" },
+      { name: "Canva", level: "Avanzado", color: "bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200" },
     ]
   }
 ];

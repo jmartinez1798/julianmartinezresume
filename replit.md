@@ -43,9 +43,9 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Updated About Me section with authentic student perspective from Inter Bayamón (2025-01-24)
-- Replaced corporate language with genuine student voice emphasizing learning mindset
-- Updated statistics to be realistic: "En desarrollo" for skills, "4 Proyectos Reales" instead of inflated numbers
-- Enhanced focus on being autodidacta (self-taught) and passionate about real problem-solving
-- Maintained authentic goal of finding companies that value commitment and continuous learning
-- Kept versatile approach for financial, technological, and engineering sectors
+- Updated skills section with realistic percentages reflecting current student abilities (2025-01-24)
+- Adjusted technical skills: SolidWorks 90%, Arduino/PLC 70%, ANSYS Fluent 80%
+- Updated software skills: Python (basic-intermediate) 65%, React Native+Firebase 70%
+- Enhanced soft skills focus: Bilingual Communication 95%, Self-directed Learning 95%
+- Reorganized automation tools to reflect actual experience levels vs inflated claims
+- Maintained authentic student perspective throughout skills presentation

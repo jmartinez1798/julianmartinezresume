@@ -20,32 +20,32 @@ const skillCategories: SkillCategory[] = [
     icon: <Settings className="text-white text-2xl" />,
     color: "bg-blue-500",
     skills: [
-      { name: "Diseño Mecánico", percentage: 95 },
-      { name: "Automatización", percentage: 90 },
-      { name: "Arduino & PLC Logic", percentage: 85 },
-      { name: "Análisis ANSYS Fluent", percentage: 88 }
+      { name: "Diseño Mecánico (SolidWorks)", percentage: 90 },
+      { name: "Automatización Básica (Arduino/PLC)", percentage: 70 },
+      { name: "Análisis Térmico y Fluido (ANSYS)", percentage: 80 },
+      { name: "MATLAB", percentage: 75 }
     ]
   },
   {
-    title: "Tecnologías y Software", 
+    title: "Software y Tecnología", 
     icon: <Laptop className="text-white text-2xl" />,
     color: "bg-emerald-500",
     skills: [
-      { name: "React Native", percentage: 85 },
-      { name: "Firebase", percentage: 80 },
-      { name: "Python", percentage: 85 },
-      { name: "SolidWorks", percentage: 95 }
+      { name: "Python (básico-intermedio)", percentage: 65 },
+      { name: "React Native + Firebase", percentage: 70 },
+      { name: "GitHub", percentage: 75 },
+      { name: "Excel / Canva", percentage: 85 }
     ]
   },
   {
-    title: "Competencias Profesionales",
+    title: "Habilidades Blandas",
     icon: <Users className="text-white text-2xl" />,
     color: "bg-purple-500", 
     skills: [
-      { name: "Resolución de Problemas", percentage: 98 },
-      { name: "Comunicación Bilingüe", percentage: 88 },
-      { name: "Liderazgo en Equipo", percentage: 90 },
-      { name: "Innovación", percentage: 95 }
+      { name: "Resolución de Problemas", percentage: 90 },
+      { name: "Comunicación Bilingüe", percentage: 95 },
+      { name: "Trabajo en Equipo", percentage: 85 },
+      { name: "Aprendizaje Autodirigido", percentage: 95 }
     ]
   }
 ];
