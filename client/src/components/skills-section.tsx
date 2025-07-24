@@ -16,36 +16,36 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Habilidades Técnicas",
+    title: "Technical Skills",
     icon: <Settings className="text-white text-2xl" />,
     color: "bg-blue-500",
     skills: [
-      { name: "Diseño Mecánico (SolidWorks)", percentage: 90 },
-      { name: "Automatización Básica (Arduino/PLC)", percentage: 70 },
-      { name: "Análisis Térmico y Fluido (ANSYS)", percentage: 80 },
+      { name: "Mechanical Design (SolidWorks)", percentage: 90 },
+      { name: "Basic Automation (Arduino/PLC)", percentage: 70 },
+      { name: "Thermal & Fluid Analysis (ANSYS)", percentage: 80 },
       { name: "MATLAB", percentage: 75 }
     ]
   },
   {
-    title: "Software y Tecnología", 
+    title: "Software & Technology", 
     icon: <Laptop className="text-white text-2xl" />,
     color: "bg-emerald-500",
     skills: [
-      { name: "Python (básico-intermedio)", percentage: 65 },
+      { name: "Python (basic-intermediate)", percentage: 65 },
       { name: "React Native + Firebase", percentage: 70 },
       { name: "GitHub", percentage: 75 },
       { name: "Excel / Canva", percentage: 85 }
     ]
   },
   {
-    title: "Habilidades Blandas",
+    title: "Soft Skills",
     icon: <Users className="text-white text-2xl" />,
     color: "bg-purple-500", 
     skills: [
-      { name: "Resolución de Problemas", percentage: 90 },
-      { name: "Comunicación Bilingüe", percentage: 95 },
-      { name: "Trabajo en Equipo", percentage: 85 },
-      { name: "Aprendizaje Autodirigido", percentage: 95 }
+      { name: "Problem Solving", percentage: 90 },
+      { name: "Bilingual Communication", percentage: 95 },
+      { name: "Teamwork", percentage: 85 },
+      { name: "Self-Directed Learning", percentage: 95 }
     ]
   }
 ];
@@ -79,7 +79,7 @@ export function SkillsSection() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
-          Habilidades y Competencias
+          Skills & Competencies
         </h2>
         
         <div className="grid lg:grid-cols-3 gap-8">

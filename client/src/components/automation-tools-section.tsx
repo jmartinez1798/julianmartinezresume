@@ -4,30 +4,30 @@ import { Cpu, Zap, Github } from "lucide-react";
 
 const automationTools = [
   {
-    title: "Herramientas de Automatización",
+    title: "Automation Tools",
     icon: <Cpu className="text-white text-xl" />,
     color: "bg-blue-500",
     tools: [
-      { name: "Arduino", level: "Básico-Intermedio", color: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
-      { name: "PLC Logic", level: "Básico", color: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
+      { name: "Arduino", level: "Basic-Intermediate", color: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
+      { name: "PLC Logic", level: "Basic", color: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
     ]
   },
   {
-    title: "Software de Diseño",
+    title: "Design Software",
     icon: <Zap className="text-white text-xl" />,
     color: "bg-orange-500",
     tools: [
-      { name: "SolidWorks", level: "Avanzado", color: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200" },
-      { name: "ANSYS Fluent", level: "Intermedio", color: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200" },
+      { name: "SolidWorks", level: "Advanced", color: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200" },
+      { name: "ANSYS Fluent", level: "Intermediate", color: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200" },
     ]
   },
   {
-    title: "Herramientas Complementarias",
+    title: "Complementary Tools",
     icon: <Github className="text-white text-xl" />,
     color: "bg-gray-600",
     tools: [
-      { name: "GitHub", level: "Intermedio", color: "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200" },
-      { name: "Canva", level: "Avanzado", color: "bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200" },
+      { name: "GitHub", level: "Intermediate", color: "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200" },
+      { name: "Canva", level: "Advanced", color: "bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200" },
     ]
   }
 ];
@@ -35,7 +35,7 @@ const automationTools = [
 export function AutomationToolsSection() {
   return (
     <div className="bg-slate-50 dark:bg-slate-700 rounded-2xl p-6 mt-8">
-      <h4 className="text-lg font-bold mb-4 text-center">🤖 Herramientas de Automatización & Tecnología</h4>
+      <h4 className="text-lg font-bold mb-4 text-center">🤖 Automation & Technology Tools</h4>
       <div className="grid md:grid-cols-3 gap-4">
         {automationTools.map((category, index) => (
           <Card key={category.title} className="h-full">
