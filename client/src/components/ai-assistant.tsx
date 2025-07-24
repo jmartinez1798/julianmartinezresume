@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Badge } from '@/components/ui/badge';
-import { Send, Bot, User, Loader2, Sparkles } from 'lucide-react';
+import { Send, Bot, User, Loader2, Sparkles, X } from 'lucide-react';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { apiRequest } from '@/lib/queryClient';
 
@@ -126,7 +126,15 @@ export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
         <CardTitle className="flex items-center gap-2 text-sm">
           <Bot className="h-4 w-4" />
           Ask about Julián
-          <Sparkles className="h-3 w-3 ml-auto animate-pulse" />
+          <Sparkles className="h-3 w-3 ml-1 animate-pulse" />
+          <Button
+            onClick={onClose}
+            variant="ghost"
+            size="sm"
+            className="ml-auto h-6 w-6 p-0 text-white hover:bg-white/10 rounded-full"
+          >
+            <X className="h-3 w-3" />
+          </Button>
         </CardTitle>
       </CardHeader>
       
