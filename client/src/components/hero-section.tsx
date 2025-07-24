@@ -31,11 +31,9 @@ export function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center animate-fadeInUp">
         <div className="mb-8">
-          <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" 
-            alt="Julián Martínez - Professional Portrait" 
-            className="w-32 h-32 rounded-full mx-auto shadow-xl object-cover border-4 border-white dark:border-slate-700"
-          />
+          <div className="w-32 h-32 rounded-full mx-auto shadow-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-white dark:border-slate-700">
+            <div className="text-4xl font-bold text-white">JM</div>
+          </div>
         </div>
         
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
