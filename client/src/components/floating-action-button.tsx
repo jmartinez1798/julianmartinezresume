@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, X, Mail, Phone, Download } from "lucide-react";
+import { MessageCircle, X, Mail, Phone, Download, Bot } from "lucide-react";
+import { AIAssistant } from "./ai-assistant";
 
 export function FloatingActionButton() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAIOpen, setIsAIOpen] = useState(false);
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
@@ -31,6 +33,16 @@ export function FloatingActionButton() {
       <div className={`flex flex-col gap-3 mb-3 transition-all duration-300 ${
         isOpen ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4 pointer-events-none'
       }`}>
+        <Button
+          onClick={() => {
+            setIsAIOpen(true);
+            setIsOpen(false);
+          }}
+          className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-full w-12 h-12 shadow-lg transform transition-all duration-300 hover:scale-110"
+          title="AI Assistant - Ask about Julián"
+        >
+          <Bot className="h-5 w-5" />
+        </Button>
         <Button
           onClick={handleDownloadResume}
           className="bg-blue-500 hover:bg-blue-600 text-white rounded-full w-12 h-12 shadow-lg transform hover:scale-110 transition-all duration-200"
@@ -65,6 +77,9 @@ export function FloatingActionButton() {
       >
         {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
       </Button>
+
+      {/* AI Assistant */}
+      <AIAssistant isOpen={isAIOpen} onClose={() => setIsAIOpen(false)} />
     </div>
   );
 }
