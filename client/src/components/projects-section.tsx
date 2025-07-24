@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { MartinezAccent } from "./martinez-pattern";
 
 const projects = [
   {
@@ -46,8 +47,9 @@ export function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+      <MartinezAccent position="top-right" size="lg" />
+      <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
           Proyectos Destacados
         </h2>

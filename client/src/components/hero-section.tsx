@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
 import { QRCodeGenerator } from "./qr-code-generator";
+import { MartinezPattern } from "./martinez-pattern";
 
 export function HeroSection() {
   const handleDownloadResume = () => {
@@ -28,11 +29,36 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center animate-fadeInUp">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative">
+      <MartinezPattern opacity={0.03} />
+      <div className="max-w-4xl mx-auto text-center animate-fadeInUp relative z-10">
         <div className="mb-8">
-          <div className="w-32 h-32 rounded-full mx-auto shadow-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-white dark:border-slate-700 transform hover:scale-110 transition-all duration-300 cursor-pointer group">
-            <div className="text-4xl font-bold text-white group-hover:rotate-12 transition-transform duration-300">JM</div>
+          <div className="w-32 h-32 rounded-full mx-auto shadow-xl bg-white dark:bg-slate-100 flex items-center justify-center border-4 border-slate-200 dark:border-slate-300 transform hover:scale-110 transition-all duration-300 cursor-pointer group">
+            <div className="transform group-hover:rotate-12 transition-transform duration-300">
+              <svg 
+                viewBox="0 0 100 100" 
+                className="w-16 h-16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 70 L35 25 L45 35 L35 70 Z"
+                  fill="#002244"
+                  className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                />
+                <path
+                  d="M40 70 L50 25 L60 35 L55 70 Z"
+                  fill="#002244"
+                  className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                  style={{ animationDelay: '0.1s' }}
+                />
+                <path
+                  d="M60 70 L75 25 L85 35 L70 70 Z"
+                  fill="#002244"
+                  className="transform origin-center group-hover:scale-110 transition-transform duration-300"
+                  style={{ animationDelay: '0.2s' }}
+                />
+              </svg>
+            </div>
           </div>
         </div>
         
