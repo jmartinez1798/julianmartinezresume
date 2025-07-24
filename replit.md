@@ -43,10 +43,12 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Enhanced hero section with interactive skills showcase featuring hover tooltips (2025-01-24)
-- Added 6 key technical skills: SolidWorks (90%), Arduino/PLC (70%), ANSYS (80%), React/Firebase (60%), Problem Solving (85%)
-- Implemented skill proficiency indicators with color-coded progress bars
-- Converted all content to English for international professional market
-- Removed profile picture and added technical icons with emojis for visual appeal
-- Created comprehensive skill tooltips showing experience and achievements
-- Improved CTA buttons with enhanced animations and professional English text
+- Optimized skills showcase based on recruiter recommendations (2025-01-24)
+- Redesigned to highlight top 5 skill categories: Design & Simulation, Programming, Prototyping, Tech Tools, Soft Skills
+- Removed emoji decorations for cleaner professional appearance
+- Fixed tooltip positioning to appear below icons (preventing navigation bar overlap)
+- Added recruiter-recommended skills: Process improvement methodologies, technical programming, English proficiency
+- Integrated authentic skills from user's profile: MATLAB, Python, Prompt Engineering, 3D Printing, DFM, GD&T, Firebase, React Native, GitHub
+- Enhanced tooltips with quantifiable achievements and specific technology mentions
+- Improved spacing and layout for better mobile/desktop compatibility
+- All content optimized in English for international professional market
