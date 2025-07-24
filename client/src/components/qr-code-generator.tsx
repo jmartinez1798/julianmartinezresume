@@ -40,7 +40,7 @@ export function QRCodeGenerator({ url, size = 150 }: QRCodeGeneratorProps) {
 
   return (
     <div className="flex flex-col items-center space-y-4">
-      <p className="text-sm text-slate-500 dark:text-slate-400">Escanea para ver mi portafolio</p>
+      <p className="text-sm text-slate-500 dark:text-slate-400">Scan to view my portfolio</p>
       <canvas 
         ref={canvasRef}
         className="border rounded-lg shadow-md bg-white"
