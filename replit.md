@@ -43,10 +43,9 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- Expanded target audience beyond Oriental Bank to include engineering/tech companies (Raytheon, Honeywell, Lockheed Martin) (2025-01-24)
-- Updated hero section messaging to emphasize authentic learning mindset and versatility
-- Renamed "Oriental Bank section" to "Professional Interest Areas" with dual industry focus
-- Restructured professional areas into Banking/Finance and Engineering/Technology sectors
-- Updated value proposition to emphasize authenticity, learning disposition, and real problem-solving
-- Maintained real contact information (julian1798@yahoo.com, 787-397-4295, Toa Alta PR)
-- Enhanced messaging to avoid corporate exaggeration while showcasing genuine developing skills
+- Updated About Me section with authentic student perspective from Inter Bayamón (2025-01-24)
+- Replaced corporate language with genuine student voice emphasizing learning mindset
+- Updated statistics to be realistic: "En desarrollo" for skills, "4 Proyectos Reales" instead of inflated numbers
+- Enhanced focus on being autodidacta (self-taught) and passionate about real problem-solving
+- Maintained authentic goal of finding companies that value commitment and continuous learning
+- Kept versatile approach for financial, technological, and engineering sectors
