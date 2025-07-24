@@ -19,12 +19,17 @@ export function AboutSection() {
           <div className="space-y-6 animate-slideInRight">
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               I am a Mechanical Engineering student at Inter Bayamón, passionate about creating 
-              real solutions through technology and design. I consider myself a 
-              <strong className="text-slate-800 dark:text-slate-200">self-directed learner</strong>, eager to learn and contribute to meaningful projects.
+              real solutions through technology and design. My academic journey began with 
+              <strong className="text-slate-800 dark:text-slate-200">2 years of Aerospace Engineering at Pennsylvania State University, University Park (PSU)</strong>. 
+              When the pandemic occurred, I returned to Puerto Rico where Universidad Interamericana de Bayamón 
+              offered me a <strong className="text-slate-800 dark:text-slate-200">full scholarship in Mechanical Engineering</strong>, 
+              which I accepted to continue my studies closer to home.
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              I am currently developing my knowledge in areas such as 
+              This diverse academic background between a prestigious US research university and Puerto Rico 
+              has given me a unique perspective. I consider myself a 
+              <strong className="text-slate-800 dark:text-slate-200">self-directed learner</strong>, currently developing knowledge in 
               <strong className="text-slate-800 dark:text-slate-200">automation</strong>, 
               <strong className="text-slate-800 dark:text-slate-200">programming</strong>, 
               technical analysis, and product development. Each project I complete helps me grow 
@@ -40,8 +45,8 @@ export function AboutSection() {
             
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-xl">
-                <div className="text-2xl font-bold text-primary">Developing</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Technical Skills</div>
+                <div className="text-2xl font-bold text-primary">PSU + Inter</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Academic Experience</div>
               </div>
               <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-xl">
                 <div className="text-2xl font-bold text-primary">4</div>

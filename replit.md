@@ -43,6 +43,7 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
+- **Academic Trajectory Added (2025-01-24)**: Integrated authentic academic background showing 2 years Aerospace Engineering at Penn State University (PSU) and full scholarship transition to Mechanical Engineering at Inter Bayamón due to pandemic
 - **Complete English Translation (2025-01-24)**: Converted entire website from Spanish to English per recruiter recommendation for international market appeal
 - Translated all components: Navigation, Footer, About Section, Banking/Professional Areas, Projects Section, Contact Section
 - Updated hero section skills showcase with authentic technical abilities and quantifiable achievements
