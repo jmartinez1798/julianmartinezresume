@@ -144,7 +144,7 @@ export function HeroSection() {
         </h1>
         
         <div className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-2 font-semibold">
-          Mechanical Engineer specializing in design, automation, and real-world problem solving
+          Mechanical Engineer & Innovation Developer
         </div>
         
         <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
