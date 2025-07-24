@@ -9,56 +9,87 @@ ABOUT JULIÁN MARTÍNEZ:
 ## Basic Information
 - Name: Julián Martínez
 - Role: Mechanical Engineer & Innovation Developer
-- Location: Puerto Rico
-- Education: Mechanical Engineering at Universidad Interamericana de Bayamón (Inter Bayamón)
-- Previous: 2 years Aerospace Engineering at Pennsylvania State University, University Park (PSU)
+- Location: Toa Alta, Puerto Rico
+- Contact: 787-397-4295, julian1798@yahoo.com
+- Education: Bachelor's Degree in Mechanical Engineering (Expected December 2025)
+  - Universidad Interamericana de Bayamón, Puerto Rico
+  - GPA: 3.2
+- Previous Education: 2 years Aerospace Engineering at Pennsylvania State University, University Park (PSU)
+- Graduation: December 2025
 
-## Academic Achievements
-- Selected as 1 of only 3 students from Puerto Rico for University of Maryland ESTEEM-Ser Quest Research Program
-- Developed breakthrough superhydrophobic and hydrophilic fiber technology for oil-water separation
-- Research is currently being used in ships for ocean oil spill cleanup operations
-- Won 1st place in innovation competition at University of Maryland
+## Academic Achievements & Background
+- Hardworking Mechanical Engineering student graduating December 2025 from Inter American University of Puerto Rico, Bayamón Campus
+- Highly driven, self-taught in CAD design, FEA simulation, and technical automation
+- Known for pushing beyond expectations and consistently delivering more than required
+- Builder of tools, apps, and systems that solve real problems—especially passionate about design, innovation, and learning by doing
+- Selected as Research Intern for University of Maryland ESTEEM-Ser Quest Research Program
+- Won 1st place in the program's Innovation Competition
+- Presented research findings at a national STEM symposium
 - Full scholarship recipient at Inter Bayamón due to academic excellence
-- Multiple international awards in VEX Robotics competitions (programming and robotics design)
 
 ## Technical Skills
 ### Design & Simulation
-- SolidWorks (3D modeling and simulation)
-- Design for Manufacturing (DFM)
+- SolidWorks (advanced 3D modeling and simulation)
+- ANSYS (FEA simulation and thermal analysis)
+- Design for Manufacturing (DFM) Principles
 - Geometric Dimensioning and Tolerancing (GD&T)
-- Engineering design principles
+- Technical automation and CAD design
 
 ### Programming & Development
-- Python (automation and data analysis)
-- MATLAB (engineering calculations and analysis)
+- MATLAB (engineering calculations and data analysis)
+- Python (automation, data analysis, and scripting)
+- Prompt Engineering with Claude and GPT
 - React Native (mobile app development)
+- Firebase (backend database services)
 - GitHub (version control and collaboration)
-- Prompt Engineering (AI optimization)
 
 ### Manufacturing & Prototyping
-- 3D Printing (rapid prototyping)
-- Manufacturing processes
-- Materials research and selection
-- Quality control and testing
+- 3D Printing (rapid prototyping and manufacturing)
+- DFM Principles (Design for Manufacturing)
+- GD&T (Geometric Dimensioning and Tolerancing)
+- Material testing and selection
+- Prototyping and product development
 
-### Technology Tools
-- Firebase (database and backend services)
-- Microsoft Office Suite
-- Project management tools
-- Technical documentation
+### Technology Tools & Platforms
+- Firebase (database and backend development)
+- React Native (cross-platform mobile development)
+- GitHub (version control and project management)
+- Technical documentation and reporting
+- CAD/CAM software integration
+
+### Languages
+- English: Fluent
+- Spanish: Native
 
 ### Soft Skills
-- Problem-solving and analytical thinking
+- Relentless Work Ethic
+- Creative Problem Solving
+- Fast Learner
+- Self-taught technical abilities
 - Team collaboration and leadership
-- Technical communication
-- Adaptability and continuous learning
-- Cross-cultural communication (bilingual English/Spanish)
+- Cross-cultural communication
+- Innovation and continuous improvement mindset
 
 ## Professional Experience & Projects
-1. **University of Maryland Research Program (ESTEEM-Ser Quest)**: Led breakthrough research in fiber technology for environmental applications
-2. **Process Automation System**: Developed automated solutions for manufacturing efficiency
-3. **3D Printed Robotic Arm**: Designed and manufactured functional robotic system
-4. **Smart Home IoT Dashboard**: Created connected device monitoring system
+
+### University of Maryland - ESTEEM/SER-QUEST PROGRAM (Research Intern)
+- Selected for highly competitive research internship program
+- Developed an oil-water separation system using 3D-printed prototypes and SolidWorks design
+- Conducted extensive material testing and won 1st place in the program's Innovation Competition
+- Presented research findings at a national STEM symposium
+- Research breakthrough now implemented in real-world ocean oil spill cleanup operations
+
+### SPOTS APP - FOUNDER & DEVELOPER
+- Designed and launched a social photo memory app using React Native and Firebase
+- Built comprehensive user flows, location tagging, and dynamic photo challenge system
+- Integrated user-created albums and map-based memories to promote social engagement
+- Demonstrates full-stack development capabilities and entrepreneurial initiative
+
+## Key Projects & Initiatives
+1. **Oil-Water Separation System**: Revolutionary environmental technology with real-world maritime applications
+2. **SPOTS Social App**: Full-stack mobile application with location services and social features
+3. **3D Printing & Prototyping**: Advanced manufacturing projects using DFM principles and GD&T
+4. **Technical Automation Systems**: Self-taught CAD design and FEA simulation projects
 
 ## Career Goals
 - Seeking opportunities in engineering, technology, and banking sectors
@@ -80,12 +111,29 @@ ABOUT JULIÁN MARTÍNEZ:
 - Experience collaborating with high-performing teams
 - Continuous learning mindset and adaptability
 
-## Personal Qualities
-- Results-oriented with authentic willingness to learn
-- Self-taught in many technical areas
-- Demonstrates resilience (pandemic transition, maintaining excellence)
-- International experience and perspective
-- Strong work ethic and commitment to excellence
+## Interests & Passion Areas
+- Aerospace Systems
+- 3D Printing & Manufacturing
+- AI Engineering Agents
+- Crypto & Blockchain Technology
+- Technical Innovation
+- Artificial Intelligence
+
+## Academic Reference
+- Prof. Omar Meza, Ph.D.
+- Professor - Mechanical Engineering Department
+- Phone: +1 (787) 550-6687
+- Email: omeza@bayamon.inter.edu
+
+## Personal Qualities & Work Style
+- Hardworking and highly driven individual
+- Self-taught in advanced technical areas (CAD design, FEA simulation, technical automation)
+- Known for pushing beyond expectations and consistently delivering more than required
+- Builder mindset - creates tools, apps, and systems that solve real problems
+- Passionate about design, innovation, and learning by doing
+- Demonstrates resilience through successful transition from PSU to Inter Bayamón during pandemic
+- Maintains academic excellence while pursuing entrepreneurial projects
+- Results-oriented with authentic willingness to continuously learn and adapt
 `;
 
 export async function askJulianAI(question: string): Promise<string> {
