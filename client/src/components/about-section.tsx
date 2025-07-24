@@ -4,7 +4,7 @@ export function AboutSection() {
       <div className="max-w-6xl mx-auto">
         
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
-          Sobre Mí
+          About Me
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -18,34 +18,34 @@ export function AboutSection() {
           
           <div className="space-y-6 animate-slideInRight">
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              Soy un estudiante de Ingeniería Mecánica en la Inter de Bayamón, apasionado por crear 
-              soluciones reales a través de la tecnología y el diseño. Me considero una persona 
-              <strong className="text-slate-800 dark:text-slate-200">autodidacta</strong>, con muchas ganas de aprender y contribuir a proyectos significativos.
+              I am a Mechanical Engineering student at Inter Bayamón, passionate about creating 
+              real solutions through technology and design. I consider myself a 
+              <strong className="text-slate-800 dark:text-slate-200">self-directed learner</strong>, eager to learn and contribute to meaningful projects.
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              Actualmente estoy desarrollando mis conocimientos en áreas como 
-              <strong className="text-slate-800 dark:text-slate-200">automatización</strong>, 
-              <strong className="text-slate-800 dark:text-slate-200">programación básica</strong>, 
-              análisis técnico y desarrollo de productos. Cada proyecto que realizo me ayuda a crecer 
-              profesionalmente y a entender mejor cómo la ingeniería puede resolver problemas del mundo real.
+              I am currently developing my knowledge in areas such as 
+              <strong className="text-slate-800 dark:text-slate-200">automation</strong>, 
+              <strong className="text-slate-800 dark:text-slate-200">programming</strong>, 
+              technical analysis, and product development. Each project I complete helps me grow 
+              professionally and better understand how engineering can solve real-world problems.
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              Mi meta es comenzar mi carrera en una empresa que valore el 
-              <strong className="text-slate-800 dark:text-slate-200">compromiso</strong>, el 
-              <strong className="text-slate-800 dark:text-slate-200">aprendizaje constante</strong> y la 
-              resolución de problemas con impacto, ya sea en el sector financiero, tecnológico o de ingeniería.
+              My goal is to start my career at a company that values 
+              <strong className="text-slate-800 dark:text-slate-200">commitment</strong>, 
+              <strong className="text-slate-800 dark:text-slate-200">continuous learning</strong>, and 
+              impactful problem-solving, whether in the financial, technology, or engineering sectors.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-xl">
-                <div className="text-2xl font-bold text-primary">En desarrollo</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Habilidades Técnicas</div>
+                <div className="text-2xl font-bold text-primary">Developing</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Technical Skills</div>
               </div>
               <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-xl">
                 <div className="text-2xl font-bold text-primary">4</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Proyectos Reales</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Real Projects</div>
               </div>
             </div>
           </div>

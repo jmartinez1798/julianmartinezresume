@@ -10,12 +10,12 @@ export function Navigation() {
   const { theme, setTheme } = useTheme();
 
   const navItems = [
-    { id: "home", label: "Inicio" },
-    { id: "about", label: "Sobre Mí" },
-    { id: "skills", label: "Habilidades" },
-    { id: "projects", label: "Proyectos" },
-    { id: "professional-areas", label: "Áreas de Interés" },
-    { id: "contact", label: "Contacto" },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "professional-areas", label: "Professional Areas" },
+    { id: "contact", label: "Contact" },
   ];
 
   useEffect(() => {

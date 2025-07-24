@@ -9,25 +9,25 @@ export function Footer() {
           <div className="space-y-4">
             <MartinezLogoText size="md" variant="light" />
             <p className="text-sm text-slate-300 leading-relaxed">
-              Estudiante de Ingeniería Mecánica comprometido con la innovación, 
-              el aprendizaje continuo y la resolución de problemas reales.
+              Mechanical Engineering student committed to innovation, 
+              continuous learning, and solving real-world problems.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg">Enlaces Rápidos</h3>
+            <h3 className="font-bold text-lg">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="text-slate-300 hover:text-white transition-colors">Sobre Mí</a></li>
-              <li><a href="#skills" className="text-slate-300 hover:text-white transition-colors">Habilidades</a></li>
-              <li><a href="#projects" className="text-slate-300 hover:text-white transition-colors">Proyectos</a></li>
-              <li><a href="#contact" className="text-slate-300 hover:text-white transition-colors">Contacto</a></li>
+              <li><a href="#about" className="text-slate-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="#skills" className="text-slate-300 hover:text-white transition-colors">Skills</a></li>
+              <li><a href="#projects" className="text-slate-300 hover:text-white transition-colors">Projects</a></li>
+              <li><a href="#contact" className="text-slate-300 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg">Contacto</h3>
+            <h3 className="font-bold text-lg">Contact</h3>
             <div className="space-y-2 text-sm text-slate-300">
               <p>julian1798@yahoo.com</p>
               <p>787-397-4295</p>
@@ -40,7 +40,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-sm text-slate-400">
-            © 2025 Julián Martínez. Diseñado con propósito y autenticidad.
+            © 2025 Julián Martínez. Designed with purpose and authenticity.
           </p>
         </div>
       </div>
