@@ -19,21 +19,21 @@ export function AboutSection() {
           <div className="space-y-6 animate-slideInRight">
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               I am a Mechanical Engineering student at Inter Bayamón, passionate about creating 
-              real solutions through technology and design. My academic journey began with 
+              real solutions through technology and design. My technical foundation was built through 
+              <strong className="text-slate-800 dark:text-slate-200">multiple years competing globally in VEX Robotics</strong>, 
+              earning various international awards in programming and robotics design. My academic journey continued with 
               <strong className="text-slate-800 dark:text-slate-200">2 years of Aerospace Engineering at Pennsylvania State University, University Park (PSU)</strong>. 
               When the pandemic occurred, I returned to Puerto Rico where Universidad Interamericana de Bayamón 
-              offered me a <strong className="text-slate-800 dark:text-slate-200">full scholarship in Mechanical Engineering</strong>, 
-              which I accepted to continue my studies closer to home.
+              offered me a <strong className="text-slate-800 dark:text-slate-200">full scholarship in Mechanical Engineering</strong>.
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              This diverse academic background between a prestigious US research university and Puerto Rico 
-              has given me a unique perspective. I consider myself a 
-              <strong className="text-slate-800 dark:text-slate-200">self-directed learner</strong>, currently developing knowledge in 
-              <strong className="text-slate-800 dark:text-slate-200">automation</strong>, 
-              <strong className="text-slate-800 dark:text-slate-200">programming</strong>, 
-              technical analysis, and product development. Each project I complete helps me grow 
-              professionally and better understand how engineering can solve real-world problems.
+              A defining moment in my career was being 
+              <strong className="text-slate-800 dark:text-slate-200">selected as one of only 3 students from Puerto Rico</strong> 
+              for a fully-funded research program at University of Maryland. In 6 weeks, working alongside gifted US students, 
+              we developed <strong className="text-slate-800 dark:text-slate-200">superhydrophobic and hydrophilic fiber technology</strong> 
+              for oil-water separation. This research is now being used in ships for ocean oil spill cleanup, 
+              demonstrating real-world impact that drives my passion for engineering solutions.
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -45,12 +45,12 @@ export function AboutSection() {
             
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-xl">
-                <div className="text-2xl font-bold text-primary">PSU + Inter</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Academic Experience</div>
+                <div className="text-2xl font-bold text-primary">Global</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">VEX Robotics Awards</div>
               </div>
               <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-xl">
-                <div className="text-2xl font-bold text-primary">4</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Real Projects</div>
+                <div className="text-2xl font-bold text-primary">1 of 3</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Selected from PR</div>
               </div>
             </div>
           </div>

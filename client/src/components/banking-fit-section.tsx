@@ -11,7 +11,7 @@ const bankingValues = [
   {
     icon: <Target className="text-white text-2xl" />,
     title: "Results-Oriented",
-    description: "I have demonstrated the ability to deliver projects that improve operational efficiency by up to 40%, an ideal approach for professional environments.",
+    description: "Selected as 1 of 3 students from Puerto Rico for University of Maryland research program. Developed breakthrough technology now used in ocean oil spill cleanup operations.",
     color: "bg-emerald-500"
   },
   {

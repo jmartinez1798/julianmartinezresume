@@ -17,7 +17,7 @@ const projects = [
   {
     id: 2,
     title: "🔬 Oil-Water Separator",
-    description: "Internship project – 1st place in innovation competition (University of Maryland). Designed with SolidWorks and 3D printed. Presented at STEM symposium. This project allowed me to apply mechanical engineering principles in a real context.",
+    description: "Selected as one of 3 students from Puerto Rico for fully-funded research program at University of Maryland. Developed superhydrophobic and hydrophilic fiber technology that separates oil from water in 6 weeks, working alongside gifted US students. Research currently used in ships for ocean oil spill cleanup. Won 1st place in innovation competition.",
     image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
     alt: "Oil-water separator components and technical diagrams",
     technologies: ["SolidWorks", "3D Printing", "Testing"],
