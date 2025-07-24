@@ -187,14 +187,10 @@ export function HeroSection() {
         </div>
 
         {/* Engineering Stats/Highlights */}
-        <div className="grid grid-cols-3 gap-6 max-w-md mx-auto mb-8">
+        <div className="grid grid-cols-2 gap-8 max-w-sm mx-auto mb-8">
           <div className="text-center group cursor-pointer">
             <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">4</div>
             <div className="text-sm text-slate-600 dark:text-slate-400">Projects</div>
-          </div>
-          <div className="text-center group cursor-pointer">
-            <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">3+</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">Years Studying</div>
           </div>
           <div className="text-center group cursor-pointer">
             <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">∞</div>
