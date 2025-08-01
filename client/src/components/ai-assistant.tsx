@@ -20,14 +20,7 @@ interface AIAssistantProps {
 }
 
 export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: '1',
-      type: 'ai',
-      content: "Hi! I'm Julián's AI assistant. I can help answer questions about his background, skills, and experience. What would you like to know?",
-      timestamp: new Date()
-    }
-  ]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -177,22 +170,36 @@ export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
           </div>
         </ScrollArea>
 
-        {/* Quick Questions */}
-        {quickQuestionsData && (quickQuestionsData as any).questions && messages.length === 1 && (
+        {/* Welcome message and Quick Questions */}
+        {messages.length === 0 && (
           <div className="p-3 border-t bg-slate-50 dark:bg-slate-800">
-            <p className="text-xs text-slate-600 dark:text-slate-400 mb-2">Quick questions:</p>
-            <div className="flex flex-wrap gap-1">
-              {((quickQuestionsData as any).questions as string[]).slice(0, 3).map((question: string, index: number) => (
-                <Badge
-                  key={index}
-                  variant="outline"
-                  className="cursor-pointer hover:bg-primary hover:text-white transition-colors text-xs px-2 py-1"
-                  onClick={() => handleQuickQuestion(question)}
-                >
-                  {question}
-                </Badge>
-              ))}
+            <div className="text-center mb-4">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <Bot className="h-5 w-5 text-primary" />
+                <h4 className="font-semibold text-primary">Hi! I'm Julián's AI Assistant</h4>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                Ask me anything about his experience, skills, or projects!
+              </p>
             </div>
+            
+            {quickQuestionsData && (quickQuestionsData as any).questions && (
+              <div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 mb-2">Try these quick questions:</p>
+                <div className="flex flex-wrap gap-1">
+                  {((quickQuestionsData as any).questions as string[]).slice(0, 3).map((question: string, index: number) => (
+                    <Badge
+                      key={index}
+                      variant="outline"
+                      className="cursor-pointer hover:bg-primary hover:text-white transition-colors text-xs px-2 py-1"
+                      onClick={() => handleQuickQuestion(question)}
+                    >
+                      {question}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
 

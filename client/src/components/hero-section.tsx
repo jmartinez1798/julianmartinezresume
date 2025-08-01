@@ -36,14 +36,14 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-0 relative bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 overflow-hidden">
       {/* Full-width Martinez Pattern Background */}
       <div className="absolute inset-0 w-full h-full">
         <MartinezPattern opacity={0.015} />
       </div>
       {/* Full-width background overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5"></div>
-      <div className="max-w-4xl mx-auto text-center animate-fadeInUp relative z-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-center animate-fadeInUp relative z-20 px-4 sm:px-6 lg:px-8">
         {/* Skills Showcase */}
         <div className="mb-12 relative">
           <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
