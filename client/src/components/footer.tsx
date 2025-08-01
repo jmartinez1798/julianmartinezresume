@@ -45,12 +45,12 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      {/* Subtle pattern overlay - much cleaner and more professional */}
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none overflow-hidden">
+        <svg className="w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
           <defs>
-            <pattern id="footer-stripes" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-              <g transform="scale(0.3)" fill="white">
+            <pattern id="footer-stripes" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+              <g transform="scale(0.15)" fill="white">
                 <path d="M20 25 L35 70 L45 65 L30 20 Z" transform="rotate(-15 37.5 45)" />
                 <path d="M40 25 L55 70 L65 65 L50 20 Z" transform="rotate(-15 57.5 45)" />
                 <path d="M60 25 L75 70 L85 65 L70 20 Z" transform="rotate(-15 77.5 45)" />
@@ -58,6 +58,15 @@ export function Footer() {
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#footer-stripes)" />
+          {/* Gradient fade-out at bottom */}
+          <defs>
+            <linearGradient id="fadeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style={{stopColor:"white", stopOpacity:0.5}} />
+              <stop offset="70%" style={{stopColor:"white", stopOpacity:0.3}} />
+              <stop offset="100%" style={{stopColor:"white", stopOpacity:0}} />
+            </linearGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#fadeGradient)" />
         </svg>
       </div>
     </footer>
