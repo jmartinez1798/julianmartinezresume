@@ -2,22 +2,25 @@ import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
 import { QRCodeGenerator } from "./qr-code-generator";
 import { MartinezPattern } from "./martinez-pattern";
+import resumePDF from "@assets/Julian_Martinez_Resume_Final_With_TopRight_QR_1754051682310.pdf";
 
 export function HeroSection() {
   const handleDownloadResume = () => {
     // Create a link to download the resume PDF
     const link = document.createElement('a');
-    link.href = '/JulianMartinez_Resume2025.pdf'; // This should be placed in the public folder
-    link.download = 'JulianMartinez_Resume2025.pdf';
+    link.href = resumePDF;
+    link.download = 'Julian_Martinez_Resume.pdf';
     link.target = '_blank';
     
-    // Attempt to download, fallback to alert if file not found
+    // Attempt to download
     try {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     } catch (error) {
-      alert('Resume PDF will be available soon. Please contact directly to request a copy.');
+      console.error('Error downloading resume:', error);
+      // Fallback: open in new tab if download fails
+      window.open(resumePDF, '_blank');
     }
   };
 
