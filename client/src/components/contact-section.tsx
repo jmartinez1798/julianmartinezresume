@@ -39,10 +39,10 @@ export function ContactSection() {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration - these should be set as environment variables
-      const serviceId = 'service_portfolio'; // Replace with your EmailJS service ID
-      const templateId = 'template_contact'; // Replace with your EmailJS template ID
-      const publicKey = 'your_public_key'; // Replace with your EmailJS public key
+      // EmailJS configuration from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
       
       const templateParams = {
         from_name: data.name,
@@ -52,10 +52,8 @@ export function ContactSection() {
         to_email: 'julian1798@yahoo.com',
       };
 
-      // For now, we'll simulate sending the email since EmailJS requires configuration
-      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate API call
-      
-      // await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      // Send email using EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
       setIsSubmitted(true);
       form.reset();
