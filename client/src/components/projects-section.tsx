@@ -9,7 +9,8 @@ import {
   Mic, 
   Thermometer,
   Coins,
-  ArrowRight
+  ArrowRight,
+  Settings
 } from "lucide-react";
 
 const projects = [
@@ -20,7 +21,7 @@ const projects = [
     role: "Full-Stack Developer & UI/UX Designer",
     icon: <Smartphone className="w-6 h-6" />,
     category: "Mobile Development",
-    impact: "Thousands of active users"
+    impact: "Fully developed MVP with user-focused design"
   },
   {
     title: "VEX Robotics World Championship",
@@ -30,6 +31,15 @@ const projects = [
     icon: <Trophy className="w-6 h-6" />,
     category: "Robotics & Engineering",
     impact: "Top 30 globally (16,000+ teams)"
+  },
+  {
+    title: "Heat Exchanger Design & Thermal Simulation",
+    description: "Designed and simulated a heat exchanger using ANSYS and SolidWorks to analyze thermal resistance and optimize heat transfer efficiency. Applied LMTD and NTU methods for performance validation.",
+    technologies: ["Heat Transfer", "ANSYS", "SolidWorks", "Thermal Simulation", "Engineering Design"],
+    role: "Thermal Analyst & Mechanical Designer",
+    icon: <Settings className="w-6 h-6" />,
+    category: "Mechanical Engineering",
+    impact: "Validated simulation results with analytical calculations"
   },
   {
     title: "AI Voice Agent for Restaurant",
@@ -50,13 +60,13 @@ const projects = [
     impact: "Real-world implementation in ships"
   },
   {
-    title: "Crypto Community & Token Launch ($BARKY)",
-    description: "Web3 project strategy development including tokenomics design, community building, and brand identity for successful cryptocurrency launch.",
+    title: "Blockchain Strategy & Tokenomics Development",
+    description: "Led a crypto project with 787Crypto, focusing on blockchain infrastructure, tokenomics design, community building, and Web3 brand development.",
     technologies: ["Web3 Strategy", "Tokenomics", "Community Building", "Branding"],
     role: "Strategy Lead & Brand Designer",
     icon: <Coins className="w-6 h-6" />,
     category: "Web3 & Strategy",
-    impact: "Successful community launch"
+    impact: "Token and brand adoption within Web3 community"
   }
 ];
 
@@ -66,6 +76,8 @@ const getCategoryColor = (category: string) => {
       return "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 border-blue-300 dark:border-blue-700";
     case "Robotics & Engineering":
       return "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 border-orange-300 dark:border-orange-700";
+    case "Mechanical Engineering":
+      return "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border-red-300 dark:border-red-700";
     case "AI & Automation":
       return "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700";
     case "Research & Development":
