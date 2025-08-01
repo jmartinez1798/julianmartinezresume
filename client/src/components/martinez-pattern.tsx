@@ -5,24 +5,25 @@ interface MartinezPatternProps {
 
 export function MartinezPattern({ className = '', opacity = 0.05 }: MartinezPatternProps) {
   return (
-    <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
+    <div className={`absolute inset-0 w-full h-full overflow-hidden pointer-events-none ${className}`}>
       <svg 
         className="absolute inset-0 w-full h-full" 
-        viewBox="0 0 400 400" 
+        viewBox="0 0 100 100" 
         xmlns="http://www.w3.org/2000/svg"
         style={{ opacity }}
+        preserveAspectRatio="xMidYMid slice"
       >
         <defs>
-          <pattern id="martinez-stripes" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-            {/* Repeating M stripes pattern */}
-            <g transform="scale(0.4)">
+          <pattern id="martinez-stripes" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            {/* Repeating M stripes pattern - smaller and more distributed */}
+            <g transform="scale(0.3)">
               <path d="M20 25 L35 70 L45 65 L30 20 Z" fill="currentColor" transform="rotate(-15 37.5 45)" />
               <path d="M40 25 L55 70 L65 65 L50 20 Z" fill="currentColor" transform="rotate(-15 57.5 45)" />
               <path d="M60 25 L75 70 L85 65 L70 20 Z" fill="currentColor" transform="rotate(-15 77.5 45)" />
             </g>
           </pattern>
         </defs>
-        <rect width="100%" height="100%" fill="url(#martinez-stripes)" />
+        <rect width="100%" height="100%" fill="url(#martinez-stripes)" className="text-primary" />
       </svg>
     </div>
   );

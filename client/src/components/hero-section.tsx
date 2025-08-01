@@ -36,8 +36,11 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-0 relative bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-      <MartinezPattern opacity={0.03} />
+    <section id="home" className="min-h-screen flex items-center justify-center pt-0 relative bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 overflow-hidden">
+      {/* Full-width Martinez Pattern Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <MartinezPattern opacity={0.03} />
+      </div>
       {/* Full-width background overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5"></div>
       <div className="max-w-4xl mx-auto text-center animate-fadeInUp relative z-10 px-4 sm:px-6 lg:px-8">
@@ -51,7 +54,7 @@ export function HeroSection() {
                   <path d="M12 2L3 7V17L12 22L21 17V7L12 2M12 4.5L18.5 8.5L12 12.5L5.5 8.5L12 4.5M5 10.5L11 14.5V19.5L5 15.5V10.5M13 14.5L19 10.5V15.5L13 19.5V14.5Z"/>
                 </svg>
               </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center font-medium">Design & Simulation</p>
+              <p className="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center font-medium">Simulation</p>
             </div>
 
             {/* Programming */}
