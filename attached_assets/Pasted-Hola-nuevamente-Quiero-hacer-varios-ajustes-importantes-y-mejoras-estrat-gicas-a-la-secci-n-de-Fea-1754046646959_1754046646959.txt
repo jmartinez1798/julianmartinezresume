@@ -1,0 +1,48 @@
+Hola nuevamente. Quiero hacer varios ajustes importantes y mejoras estratégicas a la sección de “Featured Projects” en mi portafolio.
+
+✅ Cambios generales:
+
+1. **Spots App Project**:
+   - El proyecto fue desarrollado completamente pero **nunca lanzado públicamente**.
+   - Por lo tanto, por favor cambia la sección de **“Impact: Thousands of Active Users”** por:
+     → “Impact: Fully developed MVP with user-focused design”
+     o bien:
+     → “Impact: Completed MVP for internal testing and validation”
+
+2. **Crypto Community & Token Launch ($BARKY)**:
+   - No me encanta el título. Por favor cambia el nombre del proyecto por algo más profesional como:
+     → **“Blockchain Strategy & Tokenomics Development”**
+   - Actualiza la descripción a:
+     → “Led a crypto project with 787Crypto, focusing on blockchain infrastructure, tokenomics design, community building, and Web3 brand development.”
+   - Elimina el ticker **($BARKY)** del título para mantenerlo más neutral y profesional.
+   - El “Impact” está bien como: “Impact: Successful community launch” o también puedes poner:
+     → “Impact: Token and brand adoption within Web3 community”
+
+3. **Nuevo proyecto: Heat Transfer Simulation (Engineering Focus)**:
+   Por favor añade este nuevo proyecto, ya que es crucial para mostrar experiencia técnica en ingeniería mecánica.
+
+   - **Title:** Heat Exchanger Design & Thermal Simulation
+   - **Category:** Mechanical Engineering
+   - **Role:** Thermal Analyst & Mechanical Designer
+   - **Description:**
+     → “Designed and simulated a heat exchanger using ANSYS and SolidWorks to analyze thermal resistance and optimize heat transfer efficiency. Applied LMTD and NTU methods for performance validation.”
+   - **Tags:**
+     - Heat Transfer
+     - ANSYS
+     - SolidWorks
+     - Thermal Simulation
+     - Engineering Design
+   - **Impact:**
+     → “Impact: Validated simulation results with analytical calculations”
+
+4. **Visuals / Fotos de los Proyectos**:
+   - Algunas imágenes (como la de VEX Robotics) no aportan valor visual y no representan bien el proyecto.
+   - Por favor **mejora las imágenes** de cada proyecto para que todas sean:
+     - Profesionales
+     - Originales (evitar imágenes genéricas o de internet)
+     - Opcional: si no se tienen buenas imágenes, **puedes usar un layout sin imágenes**, solo texto y estructura visual como el resto del portafolio.
+
+✅ Comentario final:
+En general, mantener consistencia visual y profesionalismo en esta sección es clave. Los proyectos deben reflejar claramente las habilidades técnicas, impacto real, y el enfoque multidisciplinario que aporto en ingeniería, tecnología y liderazgo Web3.
+
+Gracias por todo el trabajo — seguimos con la sección de contacto luego.
