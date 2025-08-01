@@ -44,16 +44,29 @@ export function ContactSection() {
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
       
+      // Debug log to check if variables are loaded
+      console.log('EmailJS Config:', { serviceId, templateId, publicKey: publicKey ? 'Set' : 'Missing' });
+      
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS configuration is missing');
+      }
+      
+      // Initialize EmailJS with the public key
+      emailjs.init(publicKey);
+      
       const templateParams = {
         from_name: data.name,
         from_email: data.email,
         subject: data.subject,
         message: data.message,
-        to_email: 'julian1798@yahoo.com',
+        to_name: 'Julián Martínez',
       };
 
+      console.log('Sending email with params:', templateParams);
+
       // Send email using EmailJS
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      const response = await emailjs.send(serviceId, templateId, templateParams);
+      console.log('Email sent successfully:', response);
       
       setIsSubmitted(true);
       form.reset();
