@@ -61,9 +61,18 @@ export function ContactSection() {
           <div className="animate-slideInLeft">
             <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
             <p className="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-              I am always interested in discussing new opportunities and innovative projects, 
-              especially in the banking and technology sectors. Contact me to explore how I can contribute to your organization!
+              I am always interested in discussing new opportunities and innovative projects in engineering, 
+              technology, and manufacturing sectors. Contact me to explore how I can contribute to your organization!
             </p>
+            
+            {/* AI Assistant Placeholder */}
+            <div className="mb-8 p-4 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+              <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">🤖 AI Assistant Available</h4>
+              <p className="text-sm text-purple-700 dark:text-purple-300">
+                Click the purple bot button in the bottom right to chat with my AI assistant. 
+                Get instant answers about my experience, projects, and technical skills for faster screening.
+              </p>
+            </div>
             
             <div className="space-y-4">
               <div className="flex items-center space-x-4">

@@ -7,39 +7,43 @@ import { MartinezAccent } from "./martinez-pattern";
 const projects = [
   {
     id: 1,
-    title: "💡 Spots App",
-    description: "Social photo application with Firebase and React Native. I implemented user flows, maps, and photo challenges. Through this project I learned about cloud databases, interface logic, and data validation.",
+    title: "Spots App",
+    year: "2023–Present",
+    description: "Interactive map application for social events and places. Built full-stack mobile app using React Native, Firebase, and geolocation-based UX. Designed social memory system with user-tagged photos, challenge cards, and map-based interaction. Managed deployment pipeline, Firebase data structure, performance and bug testing.",
     image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
     alt: "Mobile application with maps and social photos",
-    technologies: ["React Native", "Firebase", "Maps API"],
-    techColors: ["bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200"]
+    technologies: ["React Native", "Firebase", "Geolocation", "UX Design"],
+    techColors: ["bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200", "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200"]
   },
   {
     id: 2,
-    title: "🔬 University of Maryland Research Program (ESTEEM-Ser Quest)",
-    description: "Selected as one of 3 students from Puerto Rico for the prestigious ESTEEM-Ser Quest program at University of Maryland. Developed breakthrough superhydrophobic and hydrophilic fiber technology for oil-water separation in 6 weeks, collaborating with exceptional US students. Research breakthrough now implemented in ships for ocean oil spill cleanup operations. Won 1st place in innovation competition.",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Oil-water separator components and technical diagrams",
-    technologies: ["Materials Research", "Fiber Technology", "SolidWorks"],
-    techColors: ["bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200", "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200"]
+    title: "VEX Robotics Competition",
+    year: "Global Championship",
+    description: "Led robotics team to Top 30 globally out of 16,000+ teams in world championship. Designed autonomous competitive robots and developed advanced control logic. Mentored high school and university-level students in robot design and team strategy. Implemented sensor programming and strategic gameplay algorithms.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    alt: "VEX robotics competition robot with sensors and programming",
+    technologies: ["Robotics", "C++", "Sensors", "Team Leadership"],
+    techColors: ["bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200", "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200"]
   },
   {
     id: 3,
-    title: "⚙️ Automated Assembly Line (Demo)",
-    description: "Simulated manufacturing system using Arduino and basic PLC logic. I sought to improve operational efficiency experimentally. This project helped me understand the fundamentals of industrial automation.",
-    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Automated system with robotic arms and conveyor belts",
-    technologies: ["Arduino", "PLC Logic", "Automation"],
-    techColors: ["bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200", "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200", "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200"]
+    title: "AI Agents Development",
+    year: "2024",
+    description: "Development and training of personalized AI agents using advanced prompt engineering techniques. Created custom agents for automation, data analysis, and intelligent task handling. Implemented Claude and GPT integration for specialized workflows and business process optimization.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    alt: "AI and machine learning interface with data visualization",
+    technologies: ["AI/ML", "Prompt Engineering", "Claude", "GPT"],
+    techColors: ["bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200", "bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200", "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200", "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200"]
   },
   {
     id: 4,
-    title: "🔥 Heat Exchanger Project",
-    description: "Designed and analyzed with ANSYS Fluent. I achieved a 25% simulated improvement in thermal efficiency. This project allowed me to apply principles of heat transfer and computational fluid dynamics.",
+    title: "Pharmaceutical Process Validation",
+    year: "Engineering Internship",
+    description: "Assisted in pharmaceutical manufacturing workflows, SOP design, and efficiency testing. Participated in equipment verification and documentation process for FDA compliance. Applied mechanical engineering principles to manufacturing process optimization and quality assurance protocols.",
     image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    alt: "Thermal analysis and heat exchanger components",
-    technologies: ["ANSYS Fluent", "CFD", "Thermal Analysis"],
-    techColors: ["bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200", "bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200"]
+    alt: "Pharmaceutical manufacturing equipment and process validation",
+    technologies: ["Manufacturing", "FDA Compliance", "Process Optimization", "Quality Assurance"],
+    techColors: ["bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200", "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200", "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200", "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200"]
   }
 ];
 
@@ -82,9 +86,14 @@ export function ProjectsSection() {
               </div>
               
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-                  {project.title}
-                </h3>
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <Badge variant="outline" className="text-xs">
+                    {project.year}
+                  </Badge>
+                </div>
                 <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>

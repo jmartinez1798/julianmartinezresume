@@ -1,0 +1,52 @@
+Eres un desarrollador experto en sitios web profesionales para ingenieros. Quiero que me ayudes a crear mi portafolio web limpio, moderno y con funcionalidad avanzada en Replit. Soy Julian Martínez, ingeniero mecánico de Puerto Rico, graduando en diciembre de 2025, con experiencia en robótica, AI Agents, proyectos con SolidWorks, desarrollo de apps (como Spots), y conocimientos en Python, C++, React Native, Firebase, y más.
+
+Ya tengo una base creada, pero necesito que me ayudes a completarla profesionalmente.
+
+🎯 Objetivo:
+Crear un portafolio que pueda ser compartido con reclutadores de empresas como Lockheed Martin, Honeywell, Raytheon, etc.
+
+🧩 Estructura que debe tener el website:
+
+1. **Inicio (Home)**
+   - Mi nombre, título profesional (Ingeniero Mecánico)
+   - Frase que me defina como innovador, enfocado en ingeniería, tecnología y soluciones reales
+   - Foto de perfil (opcional)
+   - Botón para descargar mi resumen en PDF (colocar espacio para subirlo)
+
+2. **Sobre mí (About)**
+   - Breve biografía: Soy bilingüe, con experiencia en robótica, AI, proyectos reales como Spots, y me enfoco en soluciones eficientes, diseño de sistemas, y mejora continua.
+   - Enlace a LinkedIn y correo
+
+3. **Proyectos (Projects)**
+   - Mostrar proyectos como:
+     - **Spots App:** Aplicación de mapa interactivo para eventos y lugares sociales (2023–Presente)
+     - **VEX Robotics:** Participación en competencias, diseño de robots, programación de sensores
+     - **AI Agents:** Desarrollo y entrenamiento de agentes personalizados usando 8n
+     - **Pharmaceutical Internship:** Apoyo en validación de procesos y documentación técnica (sin empresa específica)
+     - **Tinker App** (opcional): App de servicios para Puerto Rico
+   - Cada proyecto debe tener:
+     - Nombre, año, descripción
+     - Tags de tecnologías usadas (React Native, Firebase, AI, etc.)
+     - Imágenes o capturas (yo las añadiré después)
+
+4. **Educación (Education)**
+   - Universidad Interamericana de Puerto Rico – Ingeniería Mecánica (GPA 3.2)
+   - Pennsylvania State University – Robótica e Ingeniería Espacial (año sin definir)
+
+5. **Habilidades (Skills)**
+   - 🔧 Técnicas: SolidWorks, AutoCAD, Ansys, 3D printing, Python, C++, React Native, Firebase, SQL, MATLAB, Prompt Engineering
+   - 🤝 Blandas: Liderazgo, colaboración cruzada, bilingüismo, disciplina, mentalidad de mejora continua
+
+6. **Contacto (Contact)**
+   - Formulario con nombre, email, mensaje
+   - Opción para agendar llamada o entrevista
+
+7. **Espacio para AI Agent** (solo placeholder de momento, no funcional)
+   - "Habla con mi AI Assistant" (yo integraré esto luego)
+
+📌 Instrucciones adicionales:
+- El diseño debe ser profesional, limpio, con secciones separadas claramente, tipografía legible
+- Fondo blanco o gris claro, texto en negro, colores sobrios tipo azul marino o gris oscuro
+- Compatible en versión móvil
+- Utilizar React o HTML/CSS + JS si es más simple
+- Toda la data puede estar hardcoded por ahora (no necesito backend)

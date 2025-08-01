@@ -14,7 +14,7 @@ export function Navigation() {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
-    { id: "professional-areas", label: "Professional Areas" },
+    { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];
 

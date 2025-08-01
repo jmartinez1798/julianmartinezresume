@@ -144,12 +144,12 @@ export function HeroSection() {
         </h1>
         
         <div className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-2 font-semibold">
-          Mechanical Engineer & Innovation Developer
+          Mechanical Engineer | Robotics | AI | Builder
         </div>
         
         <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-          Currently developing skills in design, software, and real-world problem solving. 
-          Seeking opportunities to learn, add value, and grow professionally in engineering and technology.
+          Innovative mechanical engineer focused on engineering, technology, and real solutions. 
+          Bilingual professional thriving in multidisciplinary teams, bringing ideas to life through design, automation, and continuous improvement.
         </p>
         
         {/* Enhanced CTA Buttons */}
@@ -187,14 +187,18 @@ export function HeroSection() {
         </div>
 
         {/* Engineering Stats/Highlights */}
-        <div className="grid grid-cols-2 gap-8 max-w-sm mx-auto mb-8">
+        <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto mb-8">
           <div className="text-center group cursor-pointer">
-            <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">4</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">Projects</div>
+            <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">GPA 3.2</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Academic Excellence</div>
           </div>
           <div className="text-center group cursor-pointer">
-            <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">∞</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">Eagerness to Learn</div>
+            <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">Top 30</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">VEX Robotics Global</div>
+          </div>
+          <div className="text-center group cursor-pointer">
+            <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">Dec 2025</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Graduation</div>
           </div>
         </div>
 
