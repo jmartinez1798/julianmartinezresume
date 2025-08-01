@@ -1,0 +1,67 @@
+You are a professional AI developer using Replit. I want you to build me a personal portfolio website using React + Vite + TailwindCSS + optionally Firebase if needed for backend/contact forms. This site is for a mechanical engineering student named **Julian Martinez**, who is graduating in December 2025 from Inter American University of Puerto Rico. He's fluent in English and Spanish, with experience in robotics, aerospace, manufacturing, and AI tools.
+
+Here are the key features I want you to build into the site:
+
+1. **Hero Section (Top Banner):**
+   - Name: Julian Martinez
+   - Tagline: "Mechanical Engineer | Robotics | AI | Builder"
+   - Background image or gradient
+   - Button: Download Resume (PDF)
+   - Button: Contact Me (scroll to bottom)
+
+2. **About Me Section:**
+   - Small profile photo (optional)
+   - Bio (short paragraph):
+     "Hi, I'm Julian — an innovative mechanical engineer with a passion for building solutions across robotics, aerospace, AI, and full-stack development. Fluent in English and Spanish, I thrive in multidisciplinary teams and love bringing ideas to life."
+   - Location: Toa Alta, Puerto Rico
+
+3. **Experience Section:**
+   - Use timeline format or cards
+   - Include:
+     - University of Maryland Research Intern (superhydrophobic mesh project)
+     - Founder of Spots App (React Native + Firebase)
+     - Internship at Pharmaceutical Company
+     - VEX Robotics team leader (Top 30 global)
+
+4. **Projects Section:**
+   - Showcase these projects with logos/images:
+     - Spots App (link to GitHub or screenshot)
+     - VEX Robot build (image, short description)
+     - 3D printed mesh prototype
+     - AI Agent phone ordering system for restaurant
+   - Use grid layout with hover effects
+
+5. **Skills Section:**
+   - Two columns:
+     - Technical: SolidWorks, AutoCAD, ANSYS, 3D Printing, React Native, Firebase, Python, MATLAB, SQL, Prompt Engineering
+     - Soft Skills: Bilingual Communication, Leadership, Agile, Project Management, Problem Solving
+
+6. **Achievements Section:**
+   - Bullet list with bolded titles:
+     - Winner of University of Maryland Innovation Symposium
+     - VEX World Championship Finalist (Top 30/16,000)
+     - Dean’s List, multiple semesters
+
+7. **Resume Download:**
+   - Upload the PDF resume (Julian_Martinez_Final_Resume_Perfected_FIXED.pdf)
+   - Include button in header or separate section: “📄 Download Resume”
+
+8. **Contact Section:**
+   - Clean form: Name, Email, Message
+   - Optional: Add Firebase for message handling
+   - Footer with:
+     - 📍 Toa Alta, Puerto Rico
+     - 📞 +1 787-397-4295
+     - 📧 julian1798@yahoo.com
+     - LinkedIn/GitHub icons if available
+
+9. **Mobile Responsive:** 
+   - All sections must adapt to phones and tablets.
+
+10. **Design Style:**
+   - Professional and clean.
+   - White background, accent with navy or dark gray.
+   - Font: Use something modern like `Inter`, `Poppins`, or `Roboto`.
+   - Avoid playful animations or excessive colors.
+
+Once complete, structure the code so I can easily edit the content (texts, images, links). Add comments and make it readable.

@@ -18,19 +18,24 @@ ABOUT JULIÁN MARTÍNEZ:
 - Graduation: December 2025
 
 ## Academic Achievements & Background
+- Bachelor of Mechanical Engineering, GPA: 3.2 | Expected: Dec 2025
+  - Inter American University of Puerto Rico - Bayamón
+- Aerospace Engineering Studies | Completed foundational coursework, 2017-2018
+  - Pennsylvania State University
+- Winner of University of Maryland Innovation Symposium for breakthrough research on oil separation mesh
+- Finalist at VEX World Championship, placing Top 30 globally out of 16,000+ teams
+- Launched and managed Spots, a location-based social app built using Firebase and React Native
+- Recognized on the Dean's List for Academic Excellence (2 Semesters)
 - Hardworking Mechanical Engineering student graduating December 2025 from Inter American University of Puerto Rico, Bayamón Campus
 - Highly driven, self-taught in CAD design, FEA simulation, and technical automation
 - Known for pushing beyond expectations and consistently delivering more than required
 - Builder of tools, apps, and systems that solve real problems—especially passionate about design, innovation, and learning by doing
-- Selected as Research Intern for University of Maryland ESTEEM-Ser Quest Research Program
-- Won 1st place in the program's Innovation Competition
-- Presented research findings at a national STEM symposium
-- Full scholarship recipient at Inter Bayamón due to academic excellence
 
 ## Technical Skills
 ### Design & Simulation
 - SolidWorks (advanced 3D modeling and simulation)
-- ANSYS (FEA simulation and thermal analysis)
+- AutoCAD (2D drafting and technical drawings)
+- ANSYS (FEA simulation and thermal analysis including Thermal/FEA modules)
 - Design for Manufacturing (DFM) Principles
 - Geometric Dimensioning and Tolerancing (GD&T)
 - Technical automation and CAD design
@@ -38,10 +43,15 @@ ABOUT JULIÁN MARTÍNEZ:
 ### Programming & Development
 - MATLAB (engineering calculations and data analysis)
 - Python (automation, data analysis, and scripting)
+- JavaScript (web development and automation)
+- C++ (systems programming and robotics)
+- React Native (cross-platform mobile app development)
+- Firebase (backend database services and real-time data)
+- PostgreSQL (database management and queries)
+- REST APIs (web service integration)
+- Replit (cloud development platform)
+- NBN (network programming)
 - Prompt Engineering with Claude and GPT
-- React Native (mobile app development)
-- Firebase (backend database services)
-- GitHub (version control and collaboration)
 
 ### Manufacturing & Prototyping
 - 3D Printing (rapid prototyping and manufacturing)
@@ -62,34 +72,45 @@ ABOUT JULIÁN MARTÍNEZ:
 - Spanish: Native
 
 ### Soft Skills
-- Relentless Work Ethic
-- Creative Problem Solving
-- Fast Learner
-- Self-taught technical abilities
-- Team collaboration and leadership
-- Cross-cultural communication
-- Innovation and continuous improvement mindset
+- Agile & Scrum methodologies
+- Project Management
+- Problem-Solving and analytical thinking
+- Cross-Functional Collaboration
+- Fluent Bilingual Communication (English/Spanish)
+- Leadership and team coordination
+- Hardworking and results-oriented approach
 
 ## Professional Experience & Projects
 
 ### University of Maryland - ESTEEM/SER-QUEST PROGRAM (Research Intern)
-- Selected for highly competitive research internship program
-- Developed an oil-water separation system using 3D-printed prototypes and SolidWorks design
-- Conducted extensive material testing and won 1st place in the program's Innovation Competition
-- Presented research findings at a national STEM symposium
-- Research breakthrough now implemented in real-world ocean oil spill cleanup operations
+**Maryland, USA**
+- Designed and tested oil-water separation mesh with superhydrophobic/oleophilic materials
+- Delivered working prototypes using SolidWorks and 3D printing, awarded 1st place in national innovation competition
+- Findings integrated into environmental oil spill cleanup processes used by Barcasa
 
-### SPOTS APP - FOUNDER & DEVELOPER
-- Designed and launched a social photo memory app using React Native and Firebase
-- Built comprehensive user flows, location tagging, and dynamic photo challenge system
-- Integrated user-created albums and map-based memories to promote social engagement
-- Demonstrates full-stack development capabilities and entrepreneurial initiative
+### SPOTS APP - FOUNDER & LEAD DEVELOPER
+**Puerto Rico | 2023 - Present**
+- Built full-stack mobile app using React Native, Firebase, and geolocation-based UX
+- Designed social memory system with user-tagged photos, challenge cards, and map-based interaction
+- Managed deployment pipeline, Firebase data structure, performance and bug testing
+
+### Pharmaceutical Company - Engineering Support Intern
+**Puerto Rico**
+- Assisted in pharmaceutical manufacturing workflows, SOP design, and efficiency testing
+- Participated in equipment verification and documentation process for FDA compliance
+
+### VEX Robotics - International Team Competitor & Mentor
+**Puerto Rico / Global**
+- Led robotics team to Top 30 globally out of 16,000+ teams in world championship
+- Designed autonomous competitive robots and developed advanced control logic
+- Mentored high school and university-level students in robot design and team strategy
 
 ## Key Projects & Initiatives
-1. **Oil-Water Separation System**: Revolutionary environmental technology with real-world maritime applications
-2. **SPOTS Social App**: Full-stack mobile application with location services and social features
-3. **3D Printing & Prototyping**: Advanced manufacturing projects using DFM principles and GD&T
-4. **Technical Automation Systems**: Self-taught CAD design and FEA simulation projects
+1. **Oil-Water Separation System**: Revolutionary environmental technology with superhydrophobic/oleophilic materials, integrated into Barcasa's oil spill cleanup processes
+2. **SPOTS Social App**: Full-stack mobile application with React Native, Firebase, geolocation services, and social memory features
+3. **VEX Robotics Championship Robot**: Advanced autonomous competitive robot with sophisticated control logic, achieved Top 30 global ranking
+4. **Pharmaceutical Manufacturing Support**: FDA compliance documentation and equipment verification processes
+5. **3D Printing & Prototyping**: Advanced manufacturing projects using DFM principles and GD&T
 
 ## Career Goals
 - Seeking opportunities in engineering, technology, and banking sectors
