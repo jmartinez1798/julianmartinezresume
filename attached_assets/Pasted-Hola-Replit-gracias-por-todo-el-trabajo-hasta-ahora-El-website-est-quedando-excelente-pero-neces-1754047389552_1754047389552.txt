@@ -1,0 +1,39 @@
+Hola Replit, gracias por todo el trabajo hasta ahora. El website está quedando excelente, pero necesito hacer los siguientes ajustes para dejarlo perfecto:
+
+1. 🖼 HOMEPAGE – LOGO & BACKGROUND
+- Reducir el tamaño del logo en el background (`\\`) ya que actualmente se ve muy grande y aparece cortado. 
+- Idealmente, hacer que el logo tenga un tamaño más pequeño, repetido sutilmente (estilo patrón o watermark) y con opacidad baja para que se vea elegante y no distraiga visualmente.
+- También, extender el background para que cubra toda la sección del homepage, no solo el header.
+
+2. 💼 FEATURED PROJECTS – OPTIMIZACIONES
+- Si no se pueden conseguir fotos relevantes y de buena calidad para **todos** los proyectos (ej. la de VEX Robotics está en blanco), prefiero eliminar todas las fotos y que se muestre solo la información textual, estilo limpio como el resto del website.
+- Cambiar la descripción del proyecto “Spots App”:
+  - Impact: reemplazar “Thousands of active users” por:
+    → “Full-featured app development and UI/UX prototyping. Deployment stage in progress.”
+- Cambiar el título y descripción del proyecto “Crypto Community & Token Launch ($BARKY)”:
+  - Nuevo título: “Blockchain Strategy & Token Ecosystem Design”
+  - Nueva descripción:
+    → “Developed and launched a Web3 token project in collaboration with the 787Crypto community. Led tokenomics strategy, community building, and branding initiatives for a real-use case Solana-based ecosystem.”
+- Agregar nuevo proyecto:
+  - Title: Heat Exchanger Design & Thermal Simulation
+  - Description:
+    → “Designed and simulated a cross-flow heat exchanger using analytical models and SolidWorks simulations. Focused on optimizing thermal resistance, NTU, and LMTD methods for accurate heat transfer predictions.”
+  - Tools: SolidWorks, SMath Studio, Heat Transfer Engineering
+  - Impact: Applied mechanical engineering theory to real-world system simulation.
+
+3. 📬 CONTACT FORM – FUNCIONALIDAD
+- Actualmente el formulario no está conectado. Quiero que configures el sistema para que cuando alguien llene el formulario (nombre, email, subject, mensaje), **me llegue la información directamente a este correo**:
+  → `julian1798@yahoo.com`
+- Puede usarse una solución como **Formspree**, **EmailJS**, o cualquier sistema simple que funcione sin necesidad de backend pesado.
+- Añadir una notificación visual de confirmación como: “✅ Message sent! I’ll get back to you soon.”
+
+4. 🤖 AI BOT POP-UP (Bottom right)
+- El botón morado del AI Assistant no muestra ningún mensaje al entrar.
+- Quiero que automáticamente aparezca un pop-up (una sola vez por sesión) que diga:
+  → “👋 I’m your AI Assistant! Ask me anything about my experience, skills, or projects.”
+
+5. ✅ OTROS DETALLES
+- La sección de educación y habilidades está perfecta, no cambiar nada.
+- Verificar que en dark mode todos los textos tengan buen contraste con el fondo, especialmente el contenido del homepage.
+
+Gracias nuevamente, estos últimos detalles van a llevar el portafolio al próximo nivel.

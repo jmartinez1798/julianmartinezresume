@@ -39,7 +39,7 @@ export function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-0 relative bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 overflow-hidden">
       {/* Full-width Martinez Pattern Background */}
       <div className="absolute inset-0 w-full h-full">
-        <MartinezPattern opacity={0.025} />
+        <MartinezPattern opacity={0.015} />
       </div>
       {/* Full-width background overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5"></div>

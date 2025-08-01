@@ -21,7 +21,7 @@ const projects = [
     role: "Full-Stack Developer & UI/UX Designer",
     icon: <Smartphone className="w-6 h-6" />,
     category: "Mobile Development",
-    impact: "Fully developed MVP with user-focused design"
+    impact: "Full-featured app development and UI/UX prototyping. Deployment stage in progress."
   },
   {
     title: "VEX Robotics World Championship",
@@ -34,12 +34,12 @@ const projects = [
   },
   {
     title: "Heat Exchanger Design & Thermal Simulation",
-    description: "Designed and simulated a heat exchanger using ANSYS and SolidWorks to analyze thermal resistance and optimize heat transfer efficiency. Applied LMTD and NTU methods for performance validation.",
-    technologies: ["Heat Transfer", "ANSYS", "SolidWorks", "Thermal Simulation", "Engineering Design"],
+    description: "Designed and simulated a cross-flow heat exchanger using analytical models and SolidWorks simulations. Focused on optimizing thermal resistance, NTU, and LMTD methods for accurate heat transfer predictions.",
+    technologies: ["SolidWorks", "SMath Studio", "Heat Transfer Engineering"],
     role: "Thermal Analyst & Mechanical Designer",
     icon: <Settings className="w-6 h-6" />,
     category: "Mechanical Engineering",
-    impact: "Validated simulation results with analytical calculations"
+    impact: "Applied mechanical engineering theory to real-world system simulation."
   },
   {
     title: "AI Voice Agent for Restaurant",
@@ -60,8 +60,8 @@ const projects = [
     impact: "Real-world implementation in ships"
   },
   {
-    title: "Blockchain Strategy & Tokenomics Development",
-    description: "Led a crypto project with 787Crypto, focusing on blockchain infrastructure, tokenomics design, community building, and Web3 brand development.",
+    title: "Blockchain Strategy & Token Ecosystem Design",
+    description: "Developed and launched a Web3 token project in collaboration with the 787Crypto community. Led tokenomics strategy, community building, and branding initiatives for a real-use case Solana-based ecosystem.",
     technologies: ["Web3 Strategy", "Tokenomics", "Community Building", "Branding"],
     role: "Strategy Lead & Brand Designer",
     icon: <Coins className="w-6 h-6" />,
