@@ -1,0 +1,65 @@
+Estoy mejorando mi portafolio profesional como estudiante de Ingeniería Mecánica. Quiero rediseñar completamente la sección de **Skills & Competencies** de mi sitio web en Replit. Esta sección actualmente usa barras de "proficiency" (como 90%, 75%, etc.) que no deseo mantener, ya que no representan fielmente mi capacidad. 
+
+🎯 Cambios que quiero implementar:
+
+1. **Eliminar todas las barras de progreso**
+   - Eliminar todos los indicadores de porcentaje o progreso como "90%", "75%", "65%", etc.
+   - No quiero que se muestre ninguna barra horizontal ni color degradado que insinúe proficiencia.
+
+2. **Reemplazar por listas organizadas por categoría**
+   - Mantener una estructura similar en tres columnas principales: 
+     - **Technical Skills**
+     - **Software & Technology**
+     - **Soft Skills**
+
+   Dentro de cada columna, organizar los skills como listas simples con íconos (si es posible), sin porcentajes ni rangos de nivel.
+
+---
+
+🧠 **Contenido actualizado por categoría (usar esta información):**
+
+🔧 **Technical Skills**
+- Mechanical Design (SolidWorks)
+- 3D Modeling and Drafting (AutoCAD)
+- Simulation & Analysis (ANSYS Fluent)
+- MATLAB for Engineering Calculations
+- Basic Automation (Arduino, PLC Logic)
+- Thermal & Fluid Systems Design
+
+💻 **Software & Technology**
+- React Native + Firebase (MVP development)
+- Python (Scripting & Prototypes)
+- SQL & Firebase for backend
+- GitHub (Version Control)
+- Excel (advanced) / PowerPoint / Canva
+- Prompt Engineering & AI Agents (ElevenLabs, OpenAI API)
+- Web Development Basics (HTML, CSS, JS)
+
+🧠 **Soft Skills**
+- Leadership & Team Management
+- Cross-Functional Collaboration
+- Bilingual Communication (English & Spanish fluency)
+- Problem Solving
+- Teamwork & Initiative
+- Self-Directed Learning
+- Creativity & Innovation
+- Strong Work Ethic ("da la milla extra")
+- Adaptability under pressure
+- Public Speaking / Presentations
+
+---
+
+🤖 **Automation & Technology Tools**
+- **Automation**: Arduino, PLC Logic (ladder logic basics)
+- **Simulation & CAD**: SolidWorks, AutoCAD, ANSYS Fluent
+- **Data / AI / Backend**: Python, SQL, Firebase, Prompt Engineering
+- **Frontend / Presentation**: Canva, PowerPoint, Excel, React Native
+
+---
+
+✅ Diseño visual solicitado:
+
+- Usa tarjetas limpias y modernas (como las que ya hay), pero sin ningún gráfico de nivel.
+- Idealmente, usar pequeños íconos representativos al lado de cada skill.
+- Si es posible, utilizar etiquetas de color sutil para diferenciar "Advanced", "Intermediate", "Familiar", pero no usar porcentajes.
+- Sección responsiva y clara, que se adapte a móvil.

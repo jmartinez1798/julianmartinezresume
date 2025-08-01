@@ -1,0 +1,40 @@
+Estoy creando un portafolio profesional en Replit como ingeniero mecánico llamado Julian Martínez, graduando de Inter Bayamón, Puerto Rico en diciembre de 2025. Ya tengo una base creada para mi sitio web, pero necesito aplicar los siguientes cambios y mejoras visuales, técnicas y de estructura:
+
+🎯 Cambios a implementar:
+
+1. **Eliminar las barras de progreso ("80% proficiency")**
+   - En la sección del home donde aparecen los botones de "Design and Simulation", "Programming", etc., eliminar todo rastro de porcentajes de proficiencia (por ejemplo: 80%, 75%, etc.).
+   - Dejar los títulos si se desea, pero sin animaciones de hover, ni indicadores de nivel.
+
+2. **Expandir el fondo del header (Home)**
+   - El background principal de la sección de inicio (donde sale mi nombre y título como "Mechanical Engineer | Robotics | AI Builder") debe expandirse completamente de izquierda a derecha, cubriendo toda la franja del header y las 3 líneas del menú.
+   - Que el fondo de imagen o color cubra todo el ancho sin márgenes laterales.
+
+3. **Agregar un Pop-up para el AI Assistant**
+   - Justo encima del botón morado flotante (que abre el AI Agent), debe aparecer un pequeño **pop-up flotante** con el siguiente texto:
+     ```
+     AI Assistant Available 🤖
+     Click the purple button in the bottom right to chat with my AI Assistant.
+     ```
+   - Este pop-up debe verse de manera sutil pero legible en escritorio y en móvil. Puede desaparecer tras unos segundos o quedarse fijo mientras el botón esté en pantalla.
+
+4. **Modificar la sección About Me**
+   - Eliminar la **foto de perfil** que aparece a la izquierda de la descripción.
+   - Reemplazar la descripción actual por la siguiente versión resumida:
+
+     ```
+     I’m Julian Martínez, a Mechanical Engineering student from Inter Bayamón with a dual academic background that includes 2 years in Aerospace Engineering at Penn State. My experience spans competitive robotics (VEX), award-winning research at the University of Maryland, and hands-on innovation through projects like the Spots app and AI Agents. I thrive in high-pressure, tech-driven environments and am deeply committed to real-world impact through engineering, AI, and creative problem-solving.
+     ```
+
+   - Mantener formato profesional, sin foto, solo texto centrado o justificado en una columna clara.
+
+5. **Mantener lo siguiente como está:**
+   - Títulos como "Mechanical Engineer | Robotics | AI Builder" en la parte superior del home.
+   - Los botones de navegación y funcionalidad del resto del sitio.
+   - La sección de contacto que diga “Let’s Connect” y el mensaje de AI Assistant.
+
+🔧 Requisitos técnicos:
+- El sitio debe seguir siendo limpio, responsivo, sin colores chillones.
+- No usar tipografías poco profesionales ni animaciones excesivas.
+- Que todo el contenido sea compatible con navegadores modernos y versiones móviles.
+- Puedes usar Tailwind CSS o CSS nativo para estilos.

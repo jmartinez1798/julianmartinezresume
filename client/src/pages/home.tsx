@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { LoadingSpinner } from "@/components/loading-spinner";
 import { FloatingActionButton } from "@/components/floating-action-button";
+import { AIAssistantPopup } from "@/components/ai-assistant-popup";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <ContactSection />
         <Footer />
         <FloatingActionButton />
+        <AIAssistantPopup />
       </div>
     </>
   );
