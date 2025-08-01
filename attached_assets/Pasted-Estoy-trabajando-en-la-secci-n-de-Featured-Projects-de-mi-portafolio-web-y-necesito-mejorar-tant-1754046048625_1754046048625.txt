@@ -1,0 +1,39 @@
+Estoy trabajando en la sección de **Featured Projects** de mi portafolio web y necesito mejorar tanto el diseño como la presentación visual para que se alinee con el estilo profesional y minimalista del resto del sitio. Aquí están las instrucciones detalladas:
+
+🔹 1. **Opciones para las imágenes del proyecto** (elegir una de las dos):
+   - **Opción A (preferida):** Eliminar completamente las imágenes de los proyectos y dejar solamente el contenido textual con un diseño limpio, como el resto del website (similar a cómo se presentan los datos en “About” o “Skills”).
+     - Esto mantendría coherencia visual en todo el sitio.
+   - **Opción B:** Mantener las imágenes, pero **actualizarlas para que todas sean de alta calidad, relevantes, sin marcas de agua ni aspecto genérico de internet.**
+     - Por ejemplo, la imagen del proyecto de **VEX Robotics** debe ser reemplazada por una imagen más profesional o directamente relacionada a mi participación (por ejemplo, una imagen de competencia, trofeo, equipo, etc.).
+     - Asegurarse de que **todas las imágenes mantengan el mismo estilo, dimensiones y composición** (colores coherentes, sin saturación excesiva).
+
+🔹 2. **Diseño del layout**:
+   - Alineación vertical, ordenado y fácil de escanear.
+   - Incluir lo siguiente por cada proyecto:
+     - **Nombre del proyecto (título claro)**
+     - **Breve descripción (1–3 líneas)**
+     - **Tecnologías utilizadas**
+     - **Rol o contribución**
+     - **Botón de “View Details”** (opcional, para mostrar más información en un modal o despliegue expandible si se desea en el futuro)
+
+🔹 3. **Diseño responsivo**:
+   - Asegurarse de que todos los proyectos se vean bien en versión móvil y escritorio.
+   - Espaciado uniforme entre cada proyecto.
+
+🔹 4. **Estilo general**:
+   - Usar la misma paleta de colores del resto del sitio (azul, blanco, tonos neutros).
+   - Tipografía consistente.
+   - Evitar sobrecargar la sección. Queremos que esta sección respire y luzca igual de refinada que las demás.
+
+🔹 5. **Contenidos actuales a incluir (si es posible mostrar 3-5)**:
+   - Proyecto: **Spots App** – React Native, Firebase, UI/UX
+   - Proyecto: **VEX Robotics Competitions** – Diseño Mecánico, Liderazgo de Equipo
+   - Proyecto: **AI Voice Agent para Restaurante** – ElevenLabs + Automatización de Pedidos
+   - Proyecto: **Mechanical Heat Exchanger Design** – SolidWorks + Cálculo de Transferencia de Calor
+   - Proyecto: **Crypto Community & Token Launch ($BARKY)** – Estrategia Web3, Branding, Tokenomics
+
+---
+
+Cuando termines esta sección, te puedo ayudar a integrar una nueva página para cada proyecto (si decides usar botones de “View Details”), o incluir un sistema tipo **accordion / collapsible** para no recargar visualmente. También podríamos usar íconos de herramientas (React, Firebase, SolidWorks, etc.) en vez de imágenes reales si prefieres un look más tech.
+
+¿Te gustaría que preparemos ese paso también o prefieres dejarlo listo solo con este prompt por ahora?
