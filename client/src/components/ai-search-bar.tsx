@@ -18,8 +18,20 @@ export function AISearchBar() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
+  const [currentPlaceholder, setCurrentPlaceholder] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const placeholderTexts = [
+    'Ask me about Julián...',
+    '¿Dónde estudió?',
+    '¿Qué tecnologías domina?',
+    'What are his most recent projects?',
+    '¿Qué busca en su próximo empleo?',
+    'Ask about his resume...'
+  ];
 
   // Get quick questions
   const { data: quickQuestionsData } = useQuery({
@@ -96,10 +108,75 @@ export function AISearchBar() {
   };
 
   const handleInputFocus = () => {
+    setIsFocused(true);
     if (!isExpanded) {
       setIsExpanded(true);
     }
   };
+
+  const handleInputBlur = () => {
+    if (inputValue === '') {
+      setIsFocused(false);
+    }
+  };
+
+  // Typewriter effect for placeholder
+  useEffect(() => {
+    if (isFocused || inputValue !== '') return;
+
+    let currentIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false;
+    let timeout: NodeJS.Timeout;
+
+    const typeWriter = () => {
+      const currentText = placeholderTexts[currentIndex];
+      
+      if (!isDeleting) {
+        // Typing forward
+        setCurrentPlaceholder(currentText.substring(0, currentCharIndex + 1));
+        currentCharIndex++;
+        
+        if (currentCharIndex === currentText.length) {
+          // Wait before starting to delete
+          timeout = setTimeout(() => {
+            isDeleting = true;
+            typeWriter();
+          }, 2000);
+          return;
+        }
+      } else {
+        // Deleting
+        setCurrentPlaceholder(currentText.substring(0, currentCharIndex - 1));
+        currentCharIndex--;
+        
+        if (currentCharIndex === 0) {
+          isDeleting = false;
+          currentIndex = (currentIndex + 1) % placeholderTexts.length;
+          // Wait before typing next text
+          timeout = setTimeout(typeWriter, 500);
+          return;
+        }
+      }
+      
+      timeout = setTimeout(typeWriter, isDeleting ? 50 : 100);
+    };
+
+    // Start the typewriter effect
+    timeout = setTimeout(typeWriter, 1000);
+
+    return () => clearTimeout(timeout);
+  }, [isFocused, inputValue]);
+
+  // Initialize placeholder
+  useEffect(() => {
+    if (!isFocused && inputValue === '') {
+      setIsTyping(true);
+    } else {
+      setIsTyping(false);
+      setCurrentPlaceholder('❓ Pregúntame algo sobre mí o mi experiencia...');
+    }
+  }, [isFocused, inputValue]);
 
   // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
@@ -114,26 +191,32 @@ export function AISearchBar() {
   return (
     <div className="w-full max-w-2xl mx-auto mb-8">
       {/* Search Input */}
-      <div className="relative">
+      <div className="relative group">
+        <div className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10">
+          <div className={`transition-all duration-300 ${isFocused || inputValue ? 'text-primary animate-pulse' : 'text-slate-400'}`}>
+            🤖
+          </div>
+        </div>
         <Input
           ref={inputRef}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyPress={handleKeyPress}
           onFocus={handleInputFocus}
-          placeholder="❓ Pregúntame algo sobre mí o mi experiencia..."
-          className="w-full px-6 py-4 text-lg rounded-xl border-2 border-slate-200 dark:border-slate-700 focus:border-primary dark:focus:border-primary transition-all duration-300 shadow-lg hover:shadow-xl bg-white dark:bg-slate-800"
+          onBlur={handleInputBlur}
+          placeholder={isFocused || inputValue ? '❓ Pregúntame algo sobre mí o mi experiencia...' : currentPlaceholder}
+          className="w-full pl-16 pr-16 py-6 text-lg rounded-2xl border-2 border-slate-200 dark:border-slate-700 focus:border-primary dark:focus:border-primary transition-all duration-300 shadow-lg hover:shadow-xl bg-white dark:bg-slate-800 focus:ring-4 focus:ring-primary/10"
           disabled={aiAssistantMutation.isPending}
         />
         <Button
           onClick={() => handleSendMessage(inputValue)}
           disabled={!inputValue.trim() || aiAssistantMutation.isPending}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary hover:bg-primary/90 text-white rounded-lg px-4 py-2"
+          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-primary hover:bg-primary/90 text-white rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
         >
           {aiAssistantMutation.isPending ? (
-            <Loader2 className="h-4 w-4 animate-spin" />
+            <Loader2 className="h-5 w-5 animate-spin" />
           ) : (
-            <Send className="h-4 w-4" />
+            <Send className="h-5 w-5 transform transition-transform duration-200 group-hover:translate-x-0.5" />
           )}
         </Button>
       </div>

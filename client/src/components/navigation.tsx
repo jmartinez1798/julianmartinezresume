@@ -1,13 +1,8 @@
 import { useState, useEffect } from "react";
-import { Moon, Sun, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useTheme } from "./theme-provider";
 import { MartinezLogoText } from "./martinez-logo";
 
 export function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const { theme, setTheme } = useTheme();
 
   const navItems = [
     { id: "home", label: "Home" },
@@ -40,7 +35,6 @@ export function Navigation() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
     }
   };
 
@@ -50,8 +44,8 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <MartinezLogoText size="sm" showText={false} />
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          {/* Navigation */}
+          <div className="flex space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -66,55 +60,8 @@ export function Navigation() {
               </button>
             ))}
           </div>
-
-          <div className="flex items-center space-x-4">
-            {/* Theme Toggle */}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600"
-            >
-              {theme === "light" ? (
-                <Moon className="h-4 w-4" />
-              ) : (
-                <Sun className="h-4 w-4" />
-              )}
-            </Button>
-
-            {/* Mobile Menu Button */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="md:hidden bg-slate-200 dark:bg-slate-700"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-            </Button>
-          </div>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
-          <div className="px-4 py-2 space-y-2">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left py-2 transition-colors hover:text-primary ${
-                  activeSection === item.id
-                    ? "text-primary"
-                    : "text-slate-700 dark:text-slate-300"
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
     </nav>
   );
 }
