@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
 import { QRCodeGenerator } from "./qr-code-generator";
 import { MartinezPattern } from "./martinez-pattern";
+import { AISearchBar } from "./ai-search-bar";
 import resumePDF from "@assets/Julian_Martinez_Resume_Final_With_TopRight_QR_1754051682310.pdf";
 
 export function HeroSection() {
@@ -105,6 +106,9 @@ export function HeroSection() {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Julián Martínez
         </h1>
+        
+        {/* AI Search Bar - Right below the name */}
+        <AISearchBar />
         
         <div className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-2 font-semibold">
           Mechanical Engineer | Robotics | AI | Builder
