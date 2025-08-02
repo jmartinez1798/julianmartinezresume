@@ -201,10 +201,13 @@ export function ProjectsSection() {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="group/btn hover:bg-primary hover:text-white transition-all duration-300"
+                      className="group/btn hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg"
                       onClick={() => {
                         if (project.title === "Spots App") {
                           openModal();
+                        } else if (project.title === "VEX Robotics World Championship") {
+                          console.log("User visited Julian's VEX Robotics Instagram profile");
+                          window.open("https://instagram.com/ironrobotics2326/", "_blank", "noopener,noreferrer");
                         }
                       }}
                     >
