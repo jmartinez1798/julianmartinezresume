@@ -87,7 +87,9 @@ export function EducationSection() {
                     </p>
                   </div>
                 </div>
-                <Badge variant="outline" className="border-blue-200 text-blue-700">2017-2019</Badge>
+                <Badge variant="outline" className="border-blue-200 text-blue-700">
+                  2017-2018
+                </Badge>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
