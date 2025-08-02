@@ -95,6 +95,31 @@
   .qr-code {
     animation: glow 2s ease-in-out infinite alternate;
   }
+
+  /* Mobile responsiveness for digital business card */
+  @media (max-height: 700px) {
+    .business-card-modal {
+      max-height: 85vh !important;
+    }
+    .card-container {
+      padding: 1rem !important;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .business-card-modal {
+      max-height: 90vh !important;
+    }
+    .qr-section {
+      margin: 0.75rem 0 !important;
+    }
+    .skills {
+      margin-top: 0.75rem !important;
+    }
+    .button-group {
+      margin-top: 0.75rem !important;
+    }
+  }
 }
 
 @keyframes fadeInUp {

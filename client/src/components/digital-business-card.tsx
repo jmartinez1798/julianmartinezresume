@@ -125,11 +125,11 @@ END:VCARD`;
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md animate-fadeIn"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md animate-fadeIn p-4"
       onClick={onClose}
     >
       <div 
-        className="business-card-modal relative w-[95vw] max-w-[400px] bg-white/90 dark:bg-slate-900/90 backdrop-blur-[12px] rounded-3xl shadow-[0_12px_30px_rgba(0,0,0,0.15)] animate-scaleIn overflow-hidden"
+        className="business-card-modal relative w-full max-w-[400px] max-h-[90vh] bg-white/90 dark:bg-slate-900/90 backdrop-blur-[12px] rounded-3xl shadow-[0_12px_30px_rgba(0,0,0,0.15)] animate-scaleIn overflow-hidden"
         onClick={(e) => e.stopPropagation()}
         style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif' }}
       >
@@ -144,22 +144,22 @@ END:VCARD`;
         </Button>
 
         {/* Business Card Content */}
-        <div className="card-container p-6 text-center">
+        <div className="card-container p-4 sm:p-6 text-center overflow-y-auto max-h-full">
           {/* Profile Header */}
-          <div className="mb-4">
-            <h2 className="text-[28px] font-bold text-slate-900 dark:text-slate-100 mb-1 tracking-tight">
+          <div className="mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-[28px] font-bold text-slate-900 dark:text-slate-100 mb-1 tracking-tight">
               {businessCardData.name}
             </h2>
-            <p className="text-[18px] font-semibold text-primary m-0">
+            <p className="text-base sm:text-[18px] font-semibold text-primary m-0">
               {businessCardData.title}
             </p>
-            <p className="text-[15px] text-slate-600 dark:text-slate-400 mt-0.5">
+            <p className="text-sm sm:text-[15px] text-slate-600 dark:text-slate-400 mt-0.5">
               {businessCardData.subtitle}
             </p>
           </div>
 
           {/* Contact Info - Clean and simple */}
-          <div className="contact-info my-4 text-[14px]">
+          <div className="contact-info my-3 sm:my-4 text-sm">
             <a 
               href={`mailto:${businessCardData.email}`}
               className="block text-[#0077cc] dark:text-blue-400 my-1 no-underline hover:underline"
@@ -178,32 +178,32 @@ END:VCARD`;
           </div>
 
           {/* QR Code with glow animation */}
-          <div className="qr-section my-5">
+          <div className="qr-section my-3 sm:my-5">
             <div className="flex justify-center">
               <img 
                 src={qrCodeImage}
                 alt="QR Code to Portfolio"
-                className="qr-code w-[120px] h-[120px] rounded-lg"
+                className="qr-code w-20 h-20 sm:w-[120px] sm:h-[120px] rounded-lg"
                 style={{
                   animation: 'glow 2s ease-in-out infinite alternate'
                 }}
               />
             </div>
-            <p className="tagline mt-3 text-[14px] text-slate-700 dark:text-slate-300">
+            <p className="tagline mt-2 sm:mt-3 text-sm text-slate-700 dark:text-slate-300">
               {businessCardData.tagline}
             </p>
           </div>
 
           {/* Core Skills */}
-          <div className="skills mt-5">
-            <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300 mb-3">
+          <div className="skills mt-4 sm:mt-5">
+            <h3 className="text-sm sm:text-base font-semibold text-slate-700 dark:text-slate-300 mb-2 sm:mb-3">
               Core Skills
             </h3>
-            <div className="skill-tags flex flex-wrap justify-center gap-2">
+            <div className="skill-tags flex flex-wrap justify-center gap-1.5 sm:gap-2">
               {businessCardData.skills.map((skill, index) => (
                 <span 
                   key={index}
-                  className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-1.5 rounded-[20px] text-[13px] inline-block"
+                  className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-[20px] text-xs sm:text-[13px] inline-block"
                 >
                   {skill}
                 </span>
@@ -212,24 +212,24 @@ END:VCARD`;
           </div>
 
           {/* Action Buttons */}
-          <div className="button-group mt-6 flex flex-col gap-2.5">
+          <div className="button-group mt-4 sm:mt-6 flex flex-col gap-2">
             <Button
               onClick={handleShare}
-              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2.5 px-4 text-[14px] font-medium transition-colors duration-300"
+              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-[14px] font-medium transition-colors duration-300"
             >
               🔗 Share
             </Button>
             
             <Button
               onClick={copyToClipboard}
-              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2.5 px-4 text-[14px] font-medium transition-colors duration-300"
+              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-[14px] font-medium transition-colors duration-300"
             >
               📋 {copied ? 'Copied!' : 'Copy'}
             </Button>
             
             <Button
               onClick={downloadVCard}
-              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2.5 px-4 text-[14px] font-medium transition-colors duration-300"
+              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-[14px] font-medium transition-colors duration-300"
             >
               💾 Save Contact (.vcf)
             </Button>
@@ -237,7 +237,7 @@ END:VCARD`;
             <Button
               onClick={scrollToContact}
               variant="outline"
-              className="border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl py-2.5 px-4 text-[14px] font-medium"
+              className="border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-[14px] font-medium"
             >
               📧 Contact Form
             </Button>

@@ -43,6 +43,7 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
+- **Mobile Responsiveness Enhancement (2025-08-02)**: Implemented comprehensive responsive design for digital business card modal - added viewport-aware sizing (max-height: 90vh), responsive padding and spacing, scalable QR code, optimized button sizes, overflow scrolling for small screens, and media queries for devices with height constraints (600px, 700px breakpoints)
 - **Digital Business Card UI Redesign (2025-08-02)**: Complete redesign of digital business card modal with modern iOS-style interface - removed header/title, implemented backdrop blur, rounded corners (3xl), clean contact cards, proper accent colors, and integrated Contact button within modal. Removed standalone Contact button from hero section per user specifications.
 - **Hero Section Button Simplification (2025-08-02)**: Streamlined CTA buttons from 4 to 3 by removing standalone Contact button - now features only Download Resume, Share Card, and View Projects for cleaner visual hierarchy
 - **Professional Title Update (2025-08-02)**: Updated website title and meta descriptions from "Oriental Bank Candidate" to neutral professional title "Julián Martínez – Mechanical Engineer | Portfolio Profesional | Robotics & AI" for broader industry appeal
