@@ -43,6 +43,8 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
+- **Hero Section AI Search Bar Implementation (2025-08-01)**: Completely redesigned hero section by removing static skill blocks (Simulation, Programming, Prototyping, Tech Tools, Soft Skills) and replaced with an interactive AI Assistant search bar featuring animated typing effects, modern glassmorphism design, and real-time prompt cycling to simulate intelligent recruitment assistant
+- **Resume Download & QR Code Updates (2025-08-01)**: Integrated authentic resume PDF download functionality and replaced dynamically generated QR code with static custom QR code image for portfolio access
 - **Featured Projects Section Update (2025-08-01)**: Updated project content for accuracy - corrected Spots App impact to reflect MVP status, renamed crypto project to "Blockchain Strategy & Tokenomics Development" for professionalism, added new Heat Exchanger Design project showcasing mechanical engineering expertise with ANSYS and SolidWorks
 - **Martinez Pattern Background Refinement (2025-08-01)**: Reduced pattern size significantly (scale 0.15) and lowered opacity to 0.025 for subtle watermark effect that covers full homepage width without visual dominance
 - **Complete Skills Section Redesign (2025-08-01)**: Removed all progress bars and proficiency percentages, replaced with clean organized lists in three categories (Technical Skills, Software & Technology, Soft Skills) using Lucide icons and level badges (Advanced/Intermediate)

@@ -1,0 +1,55 @@
+// Prompt for Replit AI
+
+You're updating a modern portfolio website for a mechanical engineer named Julián Martínez. Please implement the following changes and enhancements to the homepage UI:
+
+---
+
+1. **Remove Skill Blocks:**
+   - Completely remove the icon cards titled: “Simulation”, “Programming”, “Prototyping”, “Tech Tools”, and “Soft Skills.”
+   - These cards should not appear in the hero section anymore.
+
+---
+
+2. **Search Bar Redesign (AI Assistant Prompt Simulation):**
+   - Replace the removed skill cards with a **large central Search Bar** that will serve as an interactive AI assistant entry point.
+   - The Search Bar should:
+     - Appear prominently centered.
+     - Have a modern and slightly glowing/animated border.
+     - Animate example prompts using a **typing effect** that loops through phrases such as:
+       - “Ask about Julian’s background”
+       - “What are his main technical skills?”
+       - “Do you want to download his resume?”
+       - “What projects has Julian worked on?”
+       - “Ask about Julian”
+     - Animate one phrase at a time, simulating a real typing experience, then loop to the next.
+     - Display a blinking typing cursor `|` at the end of each phrase while animating.
+
+---
+
+3. **Interaction Styling:**
+   - On hover, the search bar should slightly expand or glow.
+   - On focus (click), allow the user to type freely if desired — similar to a chatbot prompt field.
+
+---
+
+4. **Visual Emphasis:**
+   - This AI-like Search Bar should now become the **main highlight** of the hero section.
+   - Space everything to draw attention to the input bar. You may use layout tricks such as:
+     - Slightly dimming or fading the background behind the SearchBar.
+     - Making the bar slightly larger on desktop (e.g., width: 75% or max-w-3xl).
+     - Adding subtle motion to the border or placeholder text.
+
+---
+
+5. **Language & Tone:**
+   - Ensure all labels, animations, and placeholder text are in English.
+   - Do not use emojis or cartoon-like visuals — keep it modern, elegant, and recruiter-friendly.
+
+---
+
+This interaction simulates an AI Assistant capable of answering any recruiter’s question about Julian’s profile. The bar is not functional yet but should **look** intelligent and interactive.
+
+---
+
+Bonus (optional):
+- If possible, allow the prompt bar to toggle light/dark theme via the existing icon in the navbar.
