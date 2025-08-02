@@ -1,0 +1,55 @@
+// === OBJECTIVE ===
+// Enhance the "Featured Projects" section of my portfolio website by updating the “View Details” button 
+// on the “Spots App” card to open an embedded Figma prototype in a modal instead of a new tab.
+
+// === STEP 1: Replace Button Behavior (Spots App only) ===
+// When the user clicks the “View Details” button on the “Spots App” card:
+// - Open a centered modal window inside the page.
+// - Inside the modal, embed this Figma prototype using an iframe:
+
+// ---- IFRAME CODE ----
+<iframe
+  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/xJ6EqjY8r6pme6v56cT4IW/Spots?node-id=1005-264&starting-point-node-id=1005%3A264"
+  allowfullscreen
+  style="width: 90vw; height: 70vh; border: none; border-radius: 12px;"
+></iframe>
+
+// The modal should include:
+// - A title: "Spots App – UI/UX Prototype"
+// - A top-right ❌ close button
+
+// === STEP 2: Internal Tracking ===
+// When the button is clicked, log this message in the browser console:
+console.log("User opened Spots App Figma Prototype");
+
+// === STEP 3: Scope Control ===
+// This functionality must apply ONLY to the “Spots App” card.
+// Do NOT affect other project cards or their buttons.
+
+// === STEP 4: Modal Styling ===
+// Style the modal with:
+// - Rounded corners (12px)
+// - Smooth fade-in or scale-in animation on open
+// - Box shadow for depth
+// - Centered on screen
+// - Backdrop: semi-transparent dark overlay or blur
+// - High z-index (≥ 50)
+// - Responsive layout (works on mobile and desktop)
+
+// === STEP 5: Optional Enhancements ===
+// Add the following for a better user experience:
+// - Close modal on ESC key
+// - Close modal on clicking outside the modal (on backdrop)
+// - Disable page scroll when modal is open (overflow: hidden)
+// - Re-enable scroll when modal closes
+
+// === STEP 6: Button Visual Enhancement (Spots App only) ===
+// - Add an animated icon (e.g., ➡️ or ↗) next to the “View Details” text
+// - Animate the icon on hover (slide right or soft pulse)
+// - Keep the animation subtle and professional
+// - Preserve consistent styling with the rest of the site (rounded, shadows, font)
+
+// === FINAL GOAL ===
+// Make the Spots App “View Details” button open a beautiful, responsive modal
+// that embeds the Figma prototype and feels like a built-in product showcase.
+// It should impress recruiters with a seamless, interactive experience without leaving the site.

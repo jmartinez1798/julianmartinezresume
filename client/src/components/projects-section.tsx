@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,8 @@ import {
   Thermometer,
   Coins,
   ArrowRight,
-  Settings
+  Settings,
+  X
 } from "lucide-react";
 
 const projects = [
@@ -90,6 +92,38 @@ const getCategoryColor = (category: string) => {
 };
 
 export function ProjectsSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    console.log("User opened Spots App Figma Prototype");
+    // Disable page scroll
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    // Re-enable page scroll
+    document.body.style.overflow = 'unset';
+  };
+
+  // Handle ESC key to close modal
+  useEffect(() => {
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isModalOpen) {
+        closeModal();
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener('keydown', handleEscKey);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [isModalOpen]);
+
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative bg-white dark:bg-slate-800">
       <MartinezAccent position="top-right" size="md" />
@@ -168,6 +202,11 @@ export function ProjectsSection() {
                       variant="outline" 
                       size="sm" 
                       className="group/btn hover:bg-primary hover:text-white transition-all duration-300"
+                      onClick={() => {
+                        if (project.title === "Spots App") {
+                          openModal();
+                        }
+                      }}
                     >
                       View Details
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
@@ -200,6 +239,44 @@ export function ProjectsSection() {
           </Button>
         </div>
       </div>
+
+      {/* Spots App Figma Modal */}
+      {isModalOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm animate-fadeIn"
+          onClick={closeModal}
+        >
+          <div 
+            className="relative w-[95vw] h-[85vh] max-w-7xl bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-700 animate-scaleIn"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+                Spots App – UI/UX Prototype
+              </h3>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={closeModal}
+                className="hover:bg-slate-100 dark:hover:bg-slate-700 p-2"
+              >
+                <X className="w-5 h-5" />
+              </Button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 h-[calc(100%-80px)]">
+              <iframe
+                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/xJ6EqjY8r6pme6v56cT4IW/Spots?node-id=1005-264&starting-point-node-id=1005%3A264"
+                allowFullScreen
+                className="w-full h-full border-none rounded-lg"
+                title="Spots App Figma Prototype"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
