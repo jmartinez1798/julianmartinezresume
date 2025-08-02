@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Download, FileText } from "lucide-react";
+import { Download, FileText, Share2 } from "lucide-react";
 import { QRCodeGenerator } from "./qr-code-generator";
 import { MartinezPattern } from "./martinez-pattern";
+import { DigitalBusinessCard } from "./digital-business-card";
 import resumePDF from "@assets/Julian_Martinez_Resume_Final_With_TopRight_QR_1754051682310.pdf";
 
 export function HeroSection() {
+  const [isBusinessCardOpen, setIsBusinessCardOpen] = useState(false);
+
   const handleDownloadResume = () => {
     // Create a link to download the resume PDF
     const link = document.createElement('a');
