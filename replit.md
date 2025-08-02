@@ -43,9 +43,6 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
-- **AI Assistant Major Redesign (2025-08-02)**: Completely redesigned AI Assistant interface by removing floating action button and popup notifications, relocated as interactive search bar directly below "Julián Martínez" name with typewriter animation effect, professional styling with robot emoji, enhanced send button animations, and simplified navigation by removing dark mode toggle and hamburger menu for cleaner header design
-- **Resume PDF Download & QR Code Update (2025-08-02)**: Implemented direct PDF download functionality using user's actual resume file, updated QR code with custom image provided by user for authentic portfolio sharing
-- **Vite Security Vulnerability Fix (2025-08-02)**: Upgraded Vite from 5.4.14 to 5.4.19 to patch CVE-2025-30208 security vulnerability
 - **Featured Projects Section Update (2025-08-01)**: Updated project content for accuracy - corrected Spots App impact to reflect MVP status, renamed crypto project to "Blockchain Strategy & Tokenomics Development" for professionalism, added new Heat Exchanger Design project showcasing mechanical engineering expertise with ANSYS and SolidWorks
 - **Martinez Pattern Background Refinement (2025-08-01)**: Reduced pattern size significantly (scale 0.15) and lowered opacity to 0.025 for subtle watermark effect that covers full homepage width without visual dominance
 - **Complete Skills Section Redesign (2025-08-01)**: Removed all progress bars and proficiency percentages, replaced with clean organized lists in three categories (Technical Skills, Software & Technology, Soft Skills) using Lucide icons and level badges (Advanced/Intermediate)
