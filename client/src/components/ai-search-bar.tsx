@@ -26,10 +26,10 @@ export function AISearchBar() {
 
   const placeholderTexts = [
     'Ask me about Julián...',
-    '¿Dónde estudió?',
-    '¿Qué tecnologías domina?',
+    'Where did he study?',
+    'What technologies does he master?',
     'What are his most recent projects?',
-    '¿Qué busca en su próximo empleo?',
+    'What is he looking for in his next job?',
     'Ask about his resume...'
   ];
 
@@ -174,7 +174,7 @@ export function AISearchBar() {
       setIsTyping(true);
     } else {
       setIsTyping(false);
-      setCurrentPlaceholder('❓ Pregúntame algo sobre mí o mi experiencia...');
+      setCurrentPlaceholder('What would you like to know about me?');
     }
   }, [isFocused, inputValue]);
 
@@ -189,14 +189,9 @@ export function AISearchBar() {
   }, [messages]);
 
   return (
-    <div className="w-full max-w-2xl mx-auto mb-8">
+    <div className="w-full max-w-3xl mx-auto mb-8">
       {/* Search Input */}
       <div className="relative group">
-        <div className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10">
-          <div className={`transition-all duration-300 ${isFocused || inputValue ? 'text-primary animate-pulse' : 'text-slate-400'}`}>
-            🤖
-          </div>
-        </div>
         <Input
           ref={inputRef}
           value={inputValue}
@@ -204,19 +199,19 @@ export function AISearchBar() {
           onKeyPress={handleKeyPress}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
-          placeholder={isFocused || inputValue ? '❓ Pregúntame algo sobre mí o mi experiencia...' : currentPlaceholder}
-          className="w-full pl-16 pr-16 py-6 text-lg rounded-2xl border-2 border-slate-200 dark:border-slate-700 focus:border-primary dark:focus:border-primary transition-all duration-300 shadow-lg hover:shadow-xl bg-white dark:bg-slate-800 focus:ring-4 focus:ring-primary/10"
+          placeholder={isFocused || inputValue ? 'What would you like to know about me?' : currentPlaceholder}
+          className="w-full px-6 pr-20 py-7 text-xl rounded-2xl border-2 border-slate-300 dark:border-slate-600 focus:border-primary dark:focus:border-primary transition-all duration-300 shadow-2xl hover:shadow-3xl bg-white dark:bg-slate-800 focus:ring-4 focus:ring-primary/20 hover:border-primary/50 font-medium placeholder:text-slate-400 hover:scale-[1.02] focus:scale-[1.02]"
           disabled={aiAssistantMutation.isPending}
         />
         <Button
           onClick={() => handleSendMessage(inputValue)}
           disabled={!inputValue.trim() || aiAssistantMutation.isPending}
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-primary hover:bg-primary/90 text-white rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-primary hover:bg-primary/90 text-white rounded-xl px-5 py-4 transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl hover:shadow-2xl"
         >
           {aiAssistantMutation.isPending ? (
-            <Loader2 className="h-5 w-5 animate-spin" />
+            <Loader2 className="h-6 w-6 animate-spin" />
           ) : (
-            <Send className="h-5 w-5 transform transition-transform duration-200 group-hover:translate-x-0.5" />
+            <Send className="h-6 w-6 transform transition-transform duration-200 group-hover:translate-x-1" />
           )}
         </Button>
       </div>
@@ -231,7 +226,7 @@ export function AISearchBar() {
                 <div className="flex items-center gap-2 mb-3">
                   <Sparkles className="h-4 w-4 text-primary" />
                   <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
-                    Preguntas sugeridas:
+                    Suggested questions:
                   </span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

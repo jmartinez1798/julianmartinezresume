@@ -44,21 +44,40 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <MartinezLogoText size="sm" showText={false} />
           
-          {/* Navigation */}
-          <div className="flex space-x-8">
+          {/* Navigation - Right aligned with consistent spacing */}
+          <div className="hidden md:flex space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors hover:text-primary ${
+                className={`px-3 py-2 rounded-lg transition-all duration-200 hover:text-primary hover:bg-primary/5 ${
                   activeSection === item.id
-                    ? "text-primary"
+                    ? "text-primary bg-primary/10 font-medium"
                     : "text-slate-700 dark:text-slate-300"
                 }`}
               >
                 {item.label}
               </button>
             ))}
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <div className="flex space-x-4 text-sm">
+              {navItems.slice(0, 3).map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`px-2 py-1 rounded transition-colors ${
+                    activeSection === item.id
+                      ? "text-primary"
+                      : "text-slate-700 dark:text-slate-300"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
