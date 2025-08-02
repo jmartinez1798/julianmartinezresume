@@ -43,6 +43,7 @@ Hiring managers from diverse industries looking for candidates with:
 - Focus on versatility across different industry sectors
 
 ## Recent Changes
+- **Professional Title Update (2025-08-02)**: Updated website title and meta descriptions from "Oriental Bank Candidate" to neutral professional title "Julián Martínez – Mechanical Engineer | Portfolio Profesional | Robotics & AI" for broader industry appeal
 - **Interactive Project Details Implementation (2025-08-01)**: Enhanced Featured Projects section with interactive functionality - Spots App "View Details" button now opens embedded Figma prototype modal with smooth animations and professional styling, VEX Robotics button opens authentic Instagram profile (@ironrobotics2326) in new tab with engagement tracking
 - **Resume Download & QR Code Update (2025-08-01)**: Implemented authentic PDF resume download functionality using user's actual resume file, replaced dynamic QR code generator with user's custom QR code image for portfolio access
 - **Security Vulnerability Patch (2025-08-01)**: Successfully patched CVE-2025-30208 by upgrading Vite from 5.4.14 to 5.4.19, ensuring secure development environment
