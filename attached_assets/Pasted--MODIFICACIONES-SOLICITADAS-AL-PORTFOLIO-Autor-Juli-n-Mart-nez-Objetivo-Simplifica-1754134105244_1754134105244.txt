@@ -1,0 +1,70 @@
+/**
+ * 🛠️ MODIFICACIONES SOLICITADAS AL PORTFOLIO
+ * Autor: Julián Martínez
+ * Objetivo: Simplificar y mejorar la experiencia visual e interactiva del Home y la Digital Business Card.
+ */
+
+1. // 🔻 BOTONES EN EL HOMEPAGE
+
+// 📌 Problema actual:
+Demasiados botones agrupados: `Download Resume`, `Share Card`, `View Projects`, `Contact`
+
+// ✅ Solución solicitada:
+- Eliminar el botón de **Contact** (ya el botón "Share Card" contiene info de contacto).
+- Mantener solo: 
+  - `Download Resume`
+  - `Share Card`
+  - `View Projects`
+
+- Alternativa adicional: si se prefiere no eliminar Contact, colocar `Contact` dentro del modal de “Share Card” como botón secundario al lado de "Save Contact (.vcf)".
+
+---
+
+2. // 📇 SHARE CARD / DIGITAL BUSINESS CARD
+
+// 📌 Problemas visuales:
+- El header “Digital Business Card” sobra y rompe el diseño limpio.
+- El borde superior (la caja blanca con "X" y título) es innecesario.
+
+// ✅ Soluciones solicitadas:
+- **Eliminar** el texto “Digital Business Card”.
+- **Eliminar** el borde o header modal que contiene la "X" de cierre y el título.
+- Mantener solo el contenido esencial: 
+  - Nombre: `Julián Martínez` (con acentos correctos)
+  - Título: `Mechanical Engineer`
+  - Subtítulo: `Robotics & AI Specialist`
+  - Email: `julian1798@yahoo.com`
+  - Phone: `+1 (787) 974-295X`
+  - Location: `Toa Alta, Puerto Rico`
+  - QR Code (ya está perfecto, mantenerlo)
+  - Core Skills: `SolidWorks`, `Python`, `React Native`, `3D Printing`
+  - Botones:
+    - `Share` (funciona perfecto)
+    - `Copy` (funciona perfecto)
+    - `Save Contact (.vcf)` (mantener)
+
+---
+
+3. // 🎨 DISEÑO GENERAL
+
+// ✅ Mejoras visuales sugeridas:
+- Añadir un poco más de color o "depth" al modal (como un **blur** de fondo tipo iOS, o **sombra suave** al recuadro).
+- El modal debe parecer más moderno, minimalista, con estética similar a un iPhone contact card.
+- Redondear esquinas más (border-radius alto) y usar fuentes limpias tipo San Francisco o Inter.
+
+---
+
+4. // 🧠 BONUS INTERACTIVO (Opcional)
+
+Si desean llevarlo al próximo nivel:
+- Cuando se abra el "Share Card", permitir **guardar como contacto directamente** usando [Apple Wallet-style preview] si es posible (esto es opcional pero deseado si es fácil de implementar).
+
+---
+
+5. // 🧪 IMPORTANTE
+
+- Todo debe mantenerse **responsive** en mobile y desktop.
+- No tocar funcionalidades ya existentes (los botones actuales funcionan bien).
+- Validar que el nuevo diseño funcione también con **modo oscuro** activado.
+
+---
