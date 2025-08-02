@@ -29,12 +29,13 @@ export function DigitalBusinessCard({ isOpen, onClose }: DigitalBusinessCardProp
     title: "Mechanical Engineer",
     subtitle: "Robotics & AI Specialist",
     email: "julian1798@yahoo.com",
-    phone: "+1 (787) 974-295X",
+    phone: "+1 (787) 397-4295",
     location: "Toa Alta, Puerto Rico",
     website: "julianmartinezresume.com",
     linkedin: "linkedin.com/in/julianmartinez",
     github: "github.com/julianmartinez",
     skills: ["SolidWorks", "Python", "React Native", "3D Printing"],
+    tagline: "Building the future, one idea at a time 🚀",
     achievements: [
       "Top 30 VEX Robotics Global Championship",
       "University of Maryland Research Program",
@@ -128,7 +129,7 @@ END:VCARD`;
       onClick={onClose}
     >
       <div 
-        className="relative w-[95vw] max-w-sm bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 dark:border-slate-700/30 animate-scaleIn overflow-hidden"
+        className="business-card-modal relative w-[95vw] max-w-[400px] bg-white/90 dark:bg-slate-900/90 backdrop-blur-[12px] rounded-3xl shadow-[0_12px_30px_rgba(0,0,0,0.15)] animate-scaleIn overflow-hidden"
         onClick={(e) => e.stopPropagation()}
         style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif' }}
       >
@@ -142,66 +143,67 @@ END:VCARD`;
           <X className="w-4 h-4" />
         </Button>
 
-        {/* Business Card Content - Modern iOS Style */}
-        <div className="p-8 pt-12">
+        {/* Business Card Content */}
+        <div className="card-container p-6 text-center">
           {/* Profile Header */}
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2 tracking-tight">
+          <div className="mb-4">
+            <h2 className="text-[28px] font-bold text-slate-900 dark:text-slate-100 mb-1 tracking-tight">
               {businessCardData.name}
             </h2>
-            <p className="text-primary font-semibold text-lg mb-1">
+            <p className="text-[18px] font-semibold text-primary m-0">
               {businessCardData.title}
             </p>
-            <p className="text-slate-600 dark:text-slate-400 text-base">
+            <p className="text-[15px] text-slate-600 dark:text-slate-400 mt-0.5">
               {businessCardData.subtitle}
             </p>
           </div>
 
-          {/* Contact Info with iOS-style cards */}
-          <div className="space-y-4 mb-8">
-            <div className="flex items-center gap-4 p-4 bg-slate-50/50 dark:bg-slate-800/50 rounded-2xl border border-slate-200/50 dark:border-slate-700/50">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Mail className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-slate-700 dark:text-slate-300 font-medium">{businessCardData.email}</span>
-            </div>
-            
-            <div className="flex items-center gap-4 p-4 bg-slate-50/50 dark:bg-slate-800/50 rounded-2xl border border-slate-200/50 dark:border-slate-700/50">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Phone className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-slate-700 dark:text-slate-300 font-medium">{businessCardData.phone}</span>
-            </div>
-            
-            <div className="flex items-center gap-4 p-4 bg-slate-50/50 dark:bg-slate-800/50 rounded-2xl border border-slate-200/50 dark:border-slate-700/50">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-slate-700 dark:text-slate-300 font-medium">{businessCardData.location}</span>
-            </div>
+          {/* Contact Info - Clean and simple */}
+          <div className="contact-info my-4 text-[14px]">
+            <a 
+              href={`mailto:${businessCardData.email}`}
+              className="block text-[#0077cc] dark:text-blue-400 my-1 no-underline hover:underline"
+            >
+              {businessCardData.email}
+            </a>
+            <a 
+              href={`tel:${businessCardData.phone}`}
+              className="block text-[#0077cc] dark:text-blue-400 my-1 no-underline hover:underline"
+            >
+              {businessCardData.phone}
+            </a>
+            <p className="text-slate-600 dark:text-slate-400 my-1">
+              {businessCardData.location}
+            </p>
           </div>
 
-          {/* QR Code - Clean and centered */}
-          <div className="flex justify-center mb-8">
-            <div className="bg-white p-4 rounded-2xl shadow-lg border border-slate-200/50">
+          {/* QR Code with glow animation */}
+          <div className="qr-section my-5">
+            <div className="flex justify-center">
               <img 
                 src={qrCodeImage}
                 alt="QR Code to Portfolio"
-                className="w-24 h-24"
+                className="qr-code w-[120px] h-[120px] rounded-lg"
+                style={{
+                  animation: 'glow 2s ease-in-out infinite alternate'
+                }}
               />
             </div>
+            <p className="tagline mt-3 text-[14px] text-slate-700 dark:text-slate-300">
+              {businessCardData.tagline}
+            </p>
           </div>
 
-          {/* Core Skills - Clean pill design */}
-          <div className="mb-8">
-            <h4 className="text-lg font-semibold text-slate-700 dark:text-slate-300 mb-4 text-center">
+          {/* Core Skills */}
+          <div className="skills mt-5">
+            <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300 mb-3">
               Core Skills
-            </h4>
-            <div className="flex flex-wrap justify-center gap-2">
+            </h3>
+            <div className="skill-tags flex flex-wrap justify-center gap-2">
               {businessCardData.skills.map((skill, index) => (
                 <span 
                   key={index}
-                  className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full font-medium border border-primary/20"
+                  className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-1.5 rounded-[20px] text-[13px] inline-block"
                 >
                   {skill}
                 </span>
@@ -209,46 +211,36 @@ END:VCARD`;
             </div>
           </div>
 
-          {/* Action Buttons - iOS style */}
-          <div className="space-y-3">
-            <div className="grid grid-cols-2 gap-3">
-              <Button
-                onClick={handleShare}
-                className="bg-primary hover:bg-primary/90 text-white rounded-2xl py-6 font-semibold text-base"
-              >
-                <Share2 className="w-5 h-5 mr-2" />
-                Share
-              </Button>
-              
-              <Button
-                onClick={copyToClipboard}
-                variant="outline"
-                className="border-primary/30 hover:bg-primary/5 text-primary rounded-2xl py-6 font-semibold text-base"
-              >
-                {copied ? <Check className="w-5 h-5 mr-2" /> : <Copy className="w-5 h-5 mr-2" />}
-                {copied ? 'Copied!' : 'Copy'}
-              </Button>
-            </div>
+          {/* Action Buttons */}
+          <div className="button-group mt-6 flex flex-col gap-2.5">
+            <Button
+              onClick={handleShare}
+              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2.5 px-4 text-[14px] font-medium transition-colors duration-300"
+            >
+              🔗 Share
+            </Button>
             
-            <div className="grid grid-cols-2 gap-3">
-              <Button
-                onClick={downloadVCard}
-                variant="outline"
-                className="border-slate-300 hover:bg-slate-50 dark:border-slate-600 dark:hover:bg-slate-800 rounded-2xl py-6 font-semibold text-base"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Save Contact
-              </Button>
+            <Button
+              onClick={copyToClipboard}
+              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2.5 px-4 text-[14px] font-medium transition-colors duration-300"
+            >
+              📋 {copied ? 'Copied!' : 'Copy'}
+            </Button>
+            
+            <Button
+              onClick={downloadVCard}
+              className="bg-[#1e3a8a] hover:bg-[#2563eb] text-white rounded-xl py-2.5 px-4 text-[14px] font-medium transition-colors duration-300"
+            >
+              💾 Save Contact (.vcf)
+            </Button>
 
-              <Button
-                onClick={scrollToContact}
-                variant="outline"
-                className="border-accent/30 hover:bg-accent/5 text-accent rounded-2xl py-6 font-semibold text-base"
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                Contact
-              </Button>
-            </div>
+            <Button
+              onClick={scrollToContact}
+              variant="outline"
+              className="border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl py-2.5 px-4 text-[14px] font-medium"
+            >
+              📧 Contact Form
+            </Button>
           </div>
         </div>
       </div>

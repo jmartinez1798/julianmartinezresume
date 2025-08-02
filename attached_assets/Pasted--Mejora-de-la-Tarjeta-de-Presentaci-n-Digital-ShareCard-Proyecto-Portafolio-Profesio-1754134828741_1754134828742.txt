@@ -1,0 +1,156 @@
+/**
+ * 🛠️ Mejora de la Tarjeta de Presentación Digital (ShareCard)
+ * Proyecto: Portafolio Profesional de Julián Martínez
+ * Autor: Julian Martínez
+ * Objetivo: Rediseñar el modal actual para que se vea como una tarjeta profesional moderna y funcional.
+ */
+
+import React from 'react';
+
+export default function DigitalBusinessCard() {
+  return (
+    <div className="business-card-modal">
+      <div className="card-container">
+        <h2 className="name">Julián Martínez</h2>
+        <p className="title">Mechanical Engineer</p>
+        <p className="subtitle">Robotics & AI Specialist</p>
+
+        <div className="contact-info">
+          <a href="mailto:julian1798@yahoo.com" className="email">julian1798@yahoo.com</a>
+          <a href="tel:+17873974295" className="phone">+1 (787) 397-4295</a>
+          <p className="location">Toa Alta, Puerto Rico</p>
+        </div>
+
+        <div className="qr-section">
+          <img src="/qr-code.png" alt="QR Code" className="qr-code" />
+          <p className="tagline">Building the future, one idea at a time 🚀</p>
+        </div>
+
+        <div className="skills">
+          <h3>Core Skills</h3>
+          <div className="skill-tags">
+            <span>SolidWorks</span>
+            <span>Python</span>
+            <span>React Native</span>
+            <span>3D Printing</span>
+          </div>
+        </div>
+
+        <div className="button-group">
+          <button className="btn-share">🔗 Share</button>
+          <button className="btn-copy">📋 Copy</button>
+          <a href="/JulianMartinez.vcf" download className="btn-vcf">💾 Save Contact (.vcf)</a>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .business-card-modal {
+          background: rgba(255, 255, 255, 0.9);
+          backdrop-filter: blur(12px);
+          padding: 24px;
+          border-radius: 24px;
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+          max-width: 400px;
+          margin: auto;
+          text-align: center;
+        }
+
+        .card-container h2.name {
+          margin-bottom: 4px;
+          font-size: 28px;
+          font-weight: 700;
+        }
+
+        .card-container p.title {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .card-container p.subtitle {
+          margin-top: 2px;
+          font-size: 15px;
+          color: #555;
+        }
+
+        .contact-info {
+          margin: 16px 0;
+          font-size: 14px;
+        }
+
+        .contact-info a, .contact-info p {
+          display: block;
+          color: #0077cc;
+          margin: 4px 0;
+          text-decoration: none;
+        }
+
+        .qr-section {
+          margin: 20px 0;
+        }
+
+        .qr-code {
+          width: 120px;
+          height: 120px;
+          animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+          from {
+            box-shadow: 0 0 5px #007aff;
+          }
+          to {
+            box-shadow: 0 0 20px #007aff;
+          }
+        }
+
+        .tagline {
+          margin-top: 12px;
+          font-size: 14px;
+          color: #333;
+        }
+
+        .skills {
+          margin-top: 20px;
+        }
+
+        .skill-tags span {
+          background: #f2f2f2;
+          padding: 6px 12px;
+          border-radius: 20px;
+          margin: 5px;
+          display: inline-block;
+          font-size: 13px;
+        }
+
+        .button-group {
+          margin-top: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .btn-share, .btn-copy, .btn-vcf {
+          padding: 10px 16px;
+          border: none;
+          border-radius: 12px;
+          font-size: 14px;
+          cursor: pointer;
+          background-color: #1e3a8a;
+          color: white;
+          transition: background 0.3s ease;
+        }
+
+        .btn-share:hover, .btn-copy:hover, .btn-vcf:hover {
+          background-color: #2563eb;
+        }
+
+        .btn-vcf {
+          text-decoration: none;
+          text-align: center;
+          display: inline-block;
+        }
+      `}</style>
+    </div>
+  );
+}

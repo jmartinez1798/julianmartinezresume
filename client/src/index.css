@@ -91,6 +91,10 @@
   .animate-scaleIn {
     animation: scaleIn 0.3s ease-out forwards;
   }
+
+  .qr-code {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
 }
 
 @keyframes fadeInUp {
@@ -154,6 +158,15 @@
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #007aff;
+  }
+  to {
+    box-shadow: 0 0 20px #007aff;
   }
 }
 
