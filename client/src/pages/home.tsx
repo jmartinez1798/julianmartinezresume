@@ -6,6 +6,7 @@ import { ProjectsSection } from "@/components/projects-section";
 import { EducationSection } from "@/components/education-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { TestimonialsSection } from "@/components/testimonials-section";
 import { LoadingSpinner } from "@/components/loading-spinner";
 import { FloatingActionButton } from "@/components/floating-action-button";
 import { AIAssistantPopup } from "@/components/ai-assistant-popup";
@@ -20,6 +21,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
+        <TestimonialsSection />
         <EducationSection />
         <ContactSection />
         <Footer />
