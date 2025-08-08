@@ -1,0 +1,42 @@
+Repo/commit
+
+GitHub: jmartinez1798/julianmartinezresume
+Branch: main
+Commit: latest that merged “chore: improve SEO/accessibility; add red dot marker; robots.txt + sitemap.xml” (e.g., bd5a8c6)
+Files changed
+
+client/index.html
+Removed maximum-scale=1 from the viewport meta.
+Added: link rel="canonical", meta name="author", meta name="robots".
+Added Open Graph and Twitter meta tags (title/description/site_name/url).
+Added meta name="color-scheme" and meta name="theme-color" for light/dark.
+Added font preconnect links to fonts.googleapis.com and fonts.gstatic.com.
+Added two JSON-LD blocks (application/ld+json) for Person and WebSite.
+Wrapped #root in <main id="main"> and added a “Skip to content” link before it.
+Deferred the Replit banner script (<script defer ...>).
+Inserted a tiny red dot marker for live deploy confirmation:
+A div after </main> with inline style:
+position:fixed;top:8px;right:8px;width:10px;height:10px;border-radius:50%;background:#ff2d2d;z-index:2147483647;
+public/robots.txt
+Content:
+User-agent: *
+Allow: /
+Sitemap: https://julianmartinezresume.com/sitemap.xml
+public/sitemap.xml
+Basic sitemap containing https://julianmartinezresume.com/ with changefreq=monthly, priority=1.0.
+What to verify on the live site (julianmartinezresume.com)
+
+Head tags:
+View source: confirm link rel="canonical" points to https://julianmartinezresume.com/.
+Confirm the presence of Twitter/OG meta tags and the two JSON-LD scripts with @type of Person and WebSite.
+Confirm the viewport meta no longer contains maximum-scale=1.
+Body:
+Confirm the presence of the skip link (<a href="#main" class="skip-link">Skip to content</a>) before the main content.
+Confirm the <div> live marker (red dot) exists with the exact inline style above (top-right corner).
+Static files:
+https://julianmartinezresume.com/robots.txt returns the new robots content (not HTML).
+https://julianmartinezresume.com/sitemap.xml is reachable and well-formed XML.
+Build/deploy
+
+Replit autoscale deployment should use the latest main commit above; serving dist/public/index.html.
+After deploy, the home page should show the red dot at top-right and the updated head tags.
