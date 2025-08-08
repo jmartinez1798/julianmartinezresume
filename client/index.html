@@ -31,18 +31,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Vite will handle bundling CSS/JS -->
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest" />
 
-    <!-- Structured data -->
+    <!-- Structured data: Person -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Julián Martínez",
         "jobTitle": "Mechanical Engineer",
-        "url": "https://julianmartinezresume.com/"
+        "url": "https://julianmartinezresume.com/",
+        "email": "mailto:julian1798@yahoo.com",
+        "sameAs": [
+          "https://linkedin.com/in/julianmartinez",
+          "https://github.com/julianmartinez"
+        ],
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "Work",
+          "email": "mailto:julian1798@yahoo.com",
+          "areaServed": "PR"
+        }]
       }
     </script>
+
+    <!-- Structured data: WebSite -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -51,6 +65,20 @@
         "url": "https://julianmartinezresume.com/"
       }
     </script>
+
+    <!-- Structured data: Project (example) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Project",
+        "name": "Spots App",
+        "description": "Mobile application for social venue discovery with real-time location features.",
+        "url": "https://julianmartinezresume.com/#projects"
+      }
+    </script>
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="julianmartinezresume.com" src="https://plausible.io/js/script.js"></script>
   </head>
   <body>
     <a href="#main" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>

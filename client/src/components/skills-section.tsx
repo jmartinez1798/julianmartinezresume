@@ -16,6 +16,10 @@ import {
   Rocket
 } from "lucide-react";
 
+const primarySkills = ["SolidWorks", "Python", "React Native", "3D Printing", "MATLAB"];
+const secondarySkills = ["ANSYS", "Arduino/PLC", "Firebase", "SQL", "AutoCAD"];
+const learningSkills = ["ROS", "C++ for Robotics", "OpenCV", "Embedded C"];
+
 const skillCategories = [
   {
     title: "Technical Skills",
@@ -61,13 +65,6 @@ const skillCategories = [
   }
 ];
 
-const automationTools = [
-  { name: "Arduino, PLC Logic (ladder logic basics)", category: "Automation" },
-  { name: "SolidWorks, AutoCAD, ANSYS Fluent", category: "Simulation & CAD" },
-  { name: "Python, SQL, Firebase, Prompt Engineering", category: "Data / AI / Backend" },
-  { name: "Canva, PowerPoint, Excel, React Native", category: "Frontend / Presentation" }
-];
-
 const getLevelColor = (level: string) => {
   switch (level) {
     case "Advanced":
@@ -89,6 +86,40 @@ export function SkillsSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 animate-fadeInUp">
           Skills & Competencies
         </h2>
+
+        {/* Skills Matrix */}
+        <div className="mb-12 grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Primary</h3>
+              <div className="flex flex-wrap gap-2">
+                {primarySkills.map((s) => (
+                  <Badge key={s} variant="secondary">{s}</Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Secondary</h3>
+              <div className="flex flex-wrap gap-2">
+                {secondarySkills.map((s) => (
+                  <Badge key={s} variant="secondary">{s}</Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-semibold mb-2">Learning</h3>
+              <div className="flex flex-wrap gap-2">
+                {learningSkills.map((s) => (
+                  <Badge key={s} variant="secondary">{s}</Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* Main Skills Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -139,7 +170,10 @@ export function SkillsSection() {
             Automation & Technology Tools
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {automationTools.map((tool, index) => (
+            {[{ name: "Arduino, PLC Logic (ladder logic basics)", category: "Automation" },
+              { name: "SolidWorks, AutoCAD, ANSYS Fluent", category: "Simulation & CAD" },
+              { name: "Python, SQL, Firebase, Prompt Engineering", category: "Data / AI / Backend" },
+              { name: "Canva, PowerPoint, Excel, React Native", category: "Frontend / Presentation" }].map((tool, index) => (
               <Card key={index} className="hover:shadow-lg transition-all duration-300 border border-slate-200 dark:border-slate-700">
                 <CardContent className="p-4">
                   <div className="text-center">

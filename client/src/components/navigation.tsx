@@ -48,70 +48,73 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <MartinezLogoText size="sm" showText={false} />
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <button
+            className="flex items-center space-x-2 focus:outline-none"
+            onClick={() => scrollToSection("home")}
+            aria-label="Home"
+          >
+            <MartinezLogoText />
+          </button>
+
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors hover:text-primary ${
-                  activeSection === item.id
-                    ? "text-primary"
-                    : "text-slate-700 dark:text-slate-300"
+                className={`text-sm font-medium hover:text-primary transition-colors ${
+                  activeSection === item.id ? "text-primary" : "text-slate-600 dark:text-slate-300"
                 }`}
               >
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://calendly.com/your-calendly/julian-intro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="sm" className="bg-primary text-white">Book a 15‑min Call</Button>
+            </a>
+            <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "light" ? "dark" : "light")} aria-label="Toggle theme">
+              {theme === "light" ? (<Moon className="h-5 w-5" />) : (<Sun className="h-5 w-5" />)}
+            </Button>
           </div>
 
-          <div className="flex items-center space-x-4">
-            {/* Theme Toggle */}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600"
+          <div className="md:hidden flex items-center space-x-2">
+            <a
+              href="https://calendly.com/your-calendly/julian-intro"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {theme === "light" ? (
-                <Moon className="h-4 w-4" />
-              ) : (
-                <Sun className="h-4 w-4" />
-              )}
+              <Button size="sm" className="bg-primary text-white">Call</Button>
+            </a>
+            <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "light" ? "dark" : "light")} aria-label="Toggle theme">
+              {theme === "light" ? (<Moon className="h-5 w-5" />) : (<Sun className="h-5 w-5" />)}
             </Button>
-
-            {/* Mobile Menu Button */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="md:hidden bg-slate-200 dark:bg-slate-700"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
-          <div className="px-4 py-2 space-y-2">
+          <div className="px-4 py-3 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left py-2 transition-colors hover:text-primary ${
-                  activeSection === item.id
-                    ? "text-primary"
-                    : "text-slate-700 dark:text-slate-300"
+                className={`block w-full text-left py-2 ${
+                  activeSection === item.id ? "text-primary" : "text-slate-700 dark:text-slate-300"
                 }`}
               >
                 {item.label}
               </button>
             ))}
+            <a href="https://calendly.com/your-calendly/julian-intro" target="_blank" rel="noopener noreferrer" className="block">
+              <Button className="w-full bg-primary text-white">Book a 15‑min Call</Button>
+            </a>
           </div>
         </div>
       )}

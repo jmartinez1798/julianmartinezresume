@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,8 @@ const projects = [
     role: "Full-Stack Developer & UI/UX Designer",
     icon: <Smartphone className="w-6 h-6" />,
     category: "Mobile Development",
-    impact: "Full-featured app development and UI/UX prototyping. Deployment stage in progress."
+    impact: "Full-featured app development and UI/UX prototyping. Deployment stage in progress.",
+    caseStudy: "#case-spots"
   },
   {
     title: "VEX Robotics World Championship",
@@ -32,7 +33,8 @@ const projects = [
     role: "Lead Programmer & Mechanical Designer",
     icon: <Trophy className="w-6 h-6" />,
     category: "Robotics & Engineering",
-    impact: "Top 30 globally (16,000+ teams)"
+    impact: "Top 30 globally (16,000+ teams)",
+    caseStudy: "#case-vex"
   },
   {
     title: "Heat Exchanger Design & Thermal Simulation",
@@ -97,17 +99,14 @@ export function ProjectsSection() {
   const openModal = () => {
     setIsModalOpen(true);
     console.log("User opened Spots App Figma Prototype");
-    // Disable page scroll
     document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    // Re-enable page scroll
     document.body.style.overflow = 'unset';
   };
 
-  // Handle ESC key to close modal
   useEffect(() => {
     const handleEscKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && isModalOpen) {
@@ -198,27 +197,43 @@ export function ProjectsSection() {
                       </p>
                     </div>
                     
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="group/btn hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg"
-                      onClick={() => {
-                        if (project.title === "Spots App") {
-                          openModal();
-                        } else if (project.title === "VEX Robotics World Championship") {
-                          console.log("User visited Julian's VEX Robotics Instagram profile");
-                          window.open("https://instagram.com/ironrobotics2326/", "_blank", "noopener,noreferrer");
-                        }
-                      }}
-                    >
-                      View Details
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                    </Button>
+                    <div className="flex gap-2">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="group/btn hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg"
+                        onClick={() => {
+                          if (project.title === "Spots App") {
+                            openModal();
+                          } else if (project.title === "VEX Robotics World Championship") {
+                            window.open("https://instagram.com/ironrobotics2326/", "_blank", "noopener,noreferrer");
+                          }
+                        }}
+                      >
+                        View Details
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                      </Button>
+                      {project.caseStudy && (
+                        <a href={project.caseStudy} className="text-sm text-primary hover:underline flex items-center">
+                          Case Study <ExternalLink className="w-4 h-4 ml-1" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Case study anchors */}
+        <div id="case-spots" className="mt-12 text-slate-700 dark:text-slate-300">
+          <h3 className="text-2xl font-bold mb-2">Case Study: Spots App</h3>
+          <p className="mb-4">Problem: Social discovery without noisy feeds. Approach: MVP with RN + Firebase; focus on geofencing, map UX, and privacy. Outcome: Usability test success and planned beta.</p>
+        </div>
+        <div id="case-vex" className="mt-8 text-slate-700 dark:text-slate-300">
+          <h3 className="text-2xl font-bold mb-2">Case Study: VEX Robotics</h3>
+          <p>Problem: Consistent scoring and robustness under constraints. Approach: drivetrain tuning, code modularity, match strategy. Result: Top‑30 global ranking.</p>
         </div>
 
         {/* Additional Projects CTA */}
@@ -270,12 +285,15 @@ export function ProjectsSection() {
 
             {/* Modal Content */}
             <div className="p-6 h-[calc(100%-80px)]">
-              <iframe
-                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/xJ6EqjY8r6pme6v56cT4IW/Spots?node-id=1005-264&starting-point-node-id=1005%3A264"
-                allowFullScreen
-                className="w-full h-full border-none rounded-lg"
-                title="Spots App Figma Prototype"
-              />
+              <Suspense fallback={<div className="w-full h-full grid place-items-center text-slate-500">Loading…</div>}>
+                <iframe
+                  loading="lazy"
+                  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/xJ6EqjY8r6pme6v56cT4IW/Spots?node-id=1005-264&starting-point-node-id=1005%3A264"
+                  allowFullScreen
+                  className="w-full h-full border-none rounded-lg"
+                  title="Spots App Figma Prototype"
+                />
+              </Suspense>
             </div>
           </div>
         </div>
