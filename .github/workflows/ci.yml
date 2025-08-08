@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install deps
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Lint
+        run: npm run check || true
+      - name: Trigger Replit deploy (optional)
+        if: ${{ secrets.REPLIT_DEPLOY_HOOK_URL != '' }}
+        run: |
+          curl -X POST -fsSL "$REPLIT_DEPLOY_HOOK_URL"
+        env:
+          REPLIT_DEPLOY_HOOK_URL: ${{ secrets.REPLIT_DEPLOY_HOOK_URL }}
