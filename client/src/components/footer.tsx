@@ -14,7 +14,7 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-4">
           <a href="https://linkedin.com/in/julianmartinez" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-primary">LinkedIn</a>
-          <a href="https://github.com/julianmartinez" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-primary">GitHub</a>
+          <a href="https://github.com/jmartinez1798" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-primary">GitHub</a>
           <button onClick={backToTop} aria-label="Back to top" className="p-2 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">
             <ArrowUp className="w-4 h-4" />
           </button>

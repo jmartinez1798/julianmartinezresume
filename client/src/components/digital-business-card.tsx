@@ -27,13 +27,13 @@ export function DigitalBusinessCard({ isOpen, onClose }: DigitalBusinessCardProp
   const businessCardData = {
     name: "Julián Martínez",
     title: "Mechanical Engineer",
-    subtitle: "Robotics & AI Specialist",
+    subtitle: "Robotics & AI Innovator",
     email: "julian1798@yahoo.com",
-    phone: "+1 (787) 397-4295",
+    phone: "787-397-4295",
     location: "Toa Alta, Puerto Rico",
     website: "julianmartinezresume.com",
     linkedin: "linkedin.com/in/julianmartinez",
-    github: "github.com/julianmartinez",
+    github: "github.com/jmartinez1798",
     skills: ["SolidWorks", "Python", "React Native", "3D Printing"],
     tagline: "Building the future, one idea at a time 🚀",
     achievements: [
